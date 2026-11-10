@@ -1,0 +1,5 @@
+{
+  "outputDirectory": "./dist",
+  "buildCommand": "echo Static site ready",
+  "installCommand": "echo No dependencies required"
+}
