@@ -1,1 +1,19 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'"><title>清池快捷轮盘</title><link rel="stylesheet" href="wheel.css"><script defer src="wheel.js"></script></head><body><main id="wheel" aria-label="系统快捷轮盘"><div id="slots"></div><button id="cancel" aria-label="取消，不打开任何目标"><span>清池</span><small>Esc 取消</small></button><p id="wheel-status" role="status">选择一个目标</p></main></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'none'; object-src 'none'">
+<title>清池快捷轮盘</title>
+<link rel="stylesheet" href="wheel.css">
+<script defer src="launcher-core.js"></script>
+<script defer src="wheel.js"></script>
+</head>
+<body>
+<main id="wheel" aria-label="系统快捷轮盘">
+ <div id="wedge" hidden></div>
+ <div id="slots"></div>
+ <button id="cancel" type="button" aria-label="取消，不打开任何目标"><span>清池</span><small>松开 · Esc</small></button>
+ <p id="wheel-status" role="status">选择一个目标</p>
+</main>
+</body>
+</html>
