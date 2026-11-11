@@ -1,0 +1,19 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/autumn/foreground-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-c8b935af-1ae6-481f-8128-5fb97b997ed9.png",
+  "sha256": "7f3d7365ae99517915b01bd7b2eb772a4505c9299901ad10c3a55948e06f77a4",
+  "size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "prompt": "Create an ORIGINAL game foreground sprite on a fully transparent background. An airy irregular overhanging AUTUMN GINKGO branch viewed directly from ABOVE, from bottom-left toward top-right, detailed golden fan-shaped ginkgo leaves and delicate brown twigs. On a smaller neighboring sprig in the same natural cluster include sparse glossy dark olive osmanthus leaves and tiny cream-gold four-petal flowers. Natural size proportions, ginkgo leaves dominant. Many fully transparent gaps, not a solid mass. All tips fully inside image with clear 8% padding. Very fine naturalistic hand-painted texture, believable botanical/mineral material, muted elegant color, soft diffuse light from upper-left. Camera orthographic straight top-down, no isometric or side view. Crisp clean alpha, transparent gaps and outside silhouette. No water, pond bed, floor, backdrop, checkerboard, reflections, drop-shadow on a background, animals, UI, text, labels, borders or watermark. The renderer handles cast shadows and subtle animation separately.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

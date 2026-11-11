@@ -1,0 +1,26 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const C=require('../source/app/core.js');
+const now=new Date(2026,10,6,10,0,0).getTime();
+function memory(){const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v),m};}
+test('default state validates and is independent',()=>{const a=C.initial(now),b=C.initial(now);assert.deepEqual(C.validate(a),a);a.tasks.push({});assert.equal(b.tasks.length,0);});
+test('note and tasks persist across store recreation',()=>{const m=memory(),s=C.initial(now);s.note='今天慢慢来';s.tasks=[{id:'one',text:'读十页书',done:false,date:C.day(now)}];C.createStore(m).save(s);assert.deepEqual(C.createStore(m).load().state,s);});
+test('whitespace and unicode preserved',()=>{const m=memory(),s=C.initial(now);s.note='\n🪷 清池\n';C.createStore(m).save(s);assert.equal(C.createStore(m).load().state.note,s.note);});
+test('invalid store is preserved and writes blocked',()=>{const m=memory();m.setItem(C.KEY,'broken{');const s=C.createStore(m);assert.ok(s.load().error);assert.throws(()=>s.save(C.initial(now)));assert.equal(m.getItem(C.KEY),'broken{');});
+test('quota error is surfaced',()=>{const s=C.createStore({getItem:()=>null,setItem:()=>{throw Error('quota');}});assert.throws(()=>s.save(C.initial(now)),/quota/);});
+test('bad import preserves prior storage',()=>{const m=memory(),s=C.createStore(m);s.save(C.initial(now));const old=m.getItem(C.KEY);assert.throws(()=>s.import('{}'));assert.equal(m.getItem(C.KEY),old);});
+test('oversized import rejected',()=>assert.throws(()=>C.createStore(memory()).import(' '.repeat(1000001))));
+test('valid import restores corrupt state without altering source object',()=>{const m=memory();m.setItem(C.KEY,'broken');const s=C.createStore(m);s.load();s.import(JSON.stringify(C.initial(now)));s.save(C.initial(now));assert.ok(!s.load().error);});
+test('unknown fields are stripped',()=>{const s=C.initial(now);s.extra='<script>';assert.equal(C.validate(s).extra,undefined);});
+test('invalid settings rejected',()=>{for(const patch of [{fps:200},{fishCount:1000},{mode:'bad'},{caustics:'true'}]){const s=C.initial(now);Object.assign(s.settings,patch);assert.throws(()=>C.validate(s));}});
+test('duplicate task IDs rejected',()=>{const s=C.initial(now);s.tasks=[{id:'x',text:'a',done:false,date:C.day(now)},{id:'x',text:'b',done:true,date:C.day(now)}];assert.throws(()=>C.validate(s));});
+test('long note rejected',()=>{const s=C.initial(now);s.note='a'.repeat(4001);assert.throws(()=>C.validate(s));});
+test('timer uses deadline, not interval tick count',()=>{const t=C.start(C.timer(),now);assert.equal(C.remaining(t,now+92000),1408000);});
+test('pause and resume do not consume paused time',()=>{const p=C.pause(C.start(C.timer(),now),now+10000);assert.equal(C.remaining(p,now+900000),1490000);const t=C.start(p,now+900000);assert.equal(C.remaining(t,now+901000),1489000);});
+test('timer restores after reload',()=>{const m=memory(),s=C.initial(now);s.timer=C.start(s.timer,now);C.createStore(m).save(s);const restored=C.createStore(m).load().state;assert.equal(C.remaining(restored.timer,now+1000),1499000);});
+test('focus completion increments once',()=>{const s=C.initial(now);s.timer=C.start(s.timer,now);const x=C.complete(s,now+1500001);assert.equal(x.completed,true);assert.equal(x.state.focus.count,1);const y=C.complete(x.state,now+9999999);assert.equal(y.completed,false);assert.equal(y.state.focus.count,1);});
+test('break and test do not count as focus',()=>{for(const kind of ['break','test']){const s=C.initial(now);s.timer=C.start(C.timer(kind,3),now);assert.equal(C.complete(s,now+3001).state.focus.count,0);}});
+test('rollover completion applies to current local day',()=>{const s=C.initial(now);s.focus={date:'2026-11-05',count:6};s.timer=C.start(C.timer('focus',3),now);assert.equal(C.complete(s,now+4000).state.focus.count,1);});
+test('remaining clamps on backwards wall clock change',()=>{const t=C.start(C.timer(),now);assert.equal(C.remaining(t,now-999999),t.duration);});
+test('finished timer can restart',()=>{let t=C.timer('test',3);t.status='finished';t.remaining=0;t=C.start(t,now);assert.equal(t.endsAt,now+3000);});
+test('backup round trip',()=>{const s=C.initial(now);s.note='手笺';const a=C.createStore(memory()),b=C.createStore(memory());assert.deepEqual(b.import(a.export(s)),s);});
+test('nonfinite deadline and invalid timer state rejected',()=>{for(const patch of [{status:'running',endsAt:Infinity},{status:'running',endsAt:null},{duration:-1},{status:'pretend'}]){const s=C.initial(now);Object.assign(s.timer,patch);assert.throws(()=>C.validate(s));}});

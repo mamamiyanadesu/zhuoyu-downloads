@@ -1,0 +1,24 @@
+const fs=require('node:fs'),path=require('node:path'),a=require('node:assert/strict'),{screen}=require('electron');
+module.exports=async({app,win,native,root})=>{
+ const out=process.env.QINGCHI_VERIFY_OUT;fs.mkdirSync(out,{recursive:true});const checks=[],errors=[],fresh=process.argv.includes('--verify-fresh');const ev=c=>win.webContents.executeJavaScript(c),wait=ms=>new Promise(r=>setTimeout(r,ms));
+ win.webContents.on('console-message',e=>{if(e.level==='error')errors.push(e.message);});
+ const deadline=setTimeout(()=>app.exit(2),45000);const mark=(test,data)=>{checks.push({test,passed:true,data});console.log('PASS',test,JSON.stringify(data||''));};
+ try{await new Promise(r=>win.webContents.once('did-finish-load',r));win.show();win.focus();win.setAlwaysOnTop(true);await wait(500);
+  a.ok(await ev('QingchiLife.inspect().ready&&!QingchiLife.inspect().blocked'));const s=await ev('QingchiLife.inspect().state');
+  if(fresh){a.equal(s.fish.length,0);a.equal(s.wallet,60);a.equal(s.records.catches,0);}else{a.equal(s.fish.length,2);a.equal(s.records.catches,4);a.ok(s.fish[0].strokes[0].points.length>8);a.ok(s.fish[0].fed>0);const rank=await ev('QingchiPond.ranking().filter(f=>f.custom)');a.equal(rank.find(x=>x.id===s.fish[0].id).food,s.fish[0].fed);}
+  mark(fresh?'fresh-profile-no-test-content':'process-reopen-custom-fish-rank-and-catches',{fish:s.fish.length,catches:s.records.catches,revision:s.revision});
+  a.equal(await ev('typeof require'),'undefined');a.ok(!app.getPath('userData').includes('.app/'));mark('bundle-sandbox-and-external-save-directory',app.getPath('userData'));
+  await ev('document.querySelector("#life-open").click()');await wait(300);fs.writeFileSync(path.join(out,'main.png'),(await win.webContents.capturePage()).toPNG());
+  win.setSize(800,650);await wait(500);const layout=await ev(`(()=>{const d=document.querySelector('#life-dialog').getBoundingClientRect();return {x:d.x,y:d.y,w:d.width,h:d.height,viewW:innerWidth,viewH:innerHeight,overflow:document.documentElement.scrollWidth>innerWidth}})()`);a.ok(layout.x>=0&&layout.y>=0&&layout.w<=layout.viewW&&layout.h<=layout.viewH&&!layout.overflow);fs.writeFileSync(path.join(out,'compact.png'),(await win.webContents.capturePage()).toPNG());mark('compact-800x650-dialog-contained',layout);win.setSize(1280,820);
+  await ev('document.querySelector("#life-close").click()');const backup=await ev('qingchiDesktop.exportBackup()');a.ok(backup.ok);const imported=await ev(`qingchiDesktop.importBackup(${JSON.stringify(backup.value)})`);a.ok(imported.ok);a.deepEqual(imported.value.life.fish,s.fish);mark('native-valid-full-backup-import');
+  const corrupt=await ev(`qingchiDesktop.importBackup('{broken')`);a.equal(corrupt.ok,false);a.equal(native.store.state.life.fish.length,s.fish.length);mark('invalid-json-keeps-valid-state');
+  let rec=await ev('qingchiDesktop.recoverBackup()');if(fresh&&!rec.ok){a.match(rec.error,/没有上一版/);mark('fresh-store-no-previous-backup-guard');a.ok((await ev(`qingchiDesktop.importBackup(${JSON.stringify(backup.value)})`)).ok);rec=await ev('qingchiDesktop.recoverBackup()');}a.ok(rec.ok);mark('native-previous-file-recovery');
+  // Recovery replaced the life revision; reload before any future UI edits.
+  const loaded=new Promise(r=>win.webContents.once('did-finish-load',r));win.webContents.reload();await loaded;await wait(400);
+  const on=await ev('qingchiDesktop.toggleWallpaper()');a.ok(on.ok);await wait(1200);const displays=screen.getAllDisplays().map(d=>d.bounds),windows=native.inspect().windows;
+  a.equal(windows.length,displays.length);windows.forEach((w,i)=>a.deepEqual(w.bounds,displays[i]));const wall=native.walls()[0];a.equal(await wall.webContents.executeJavaScript('typeof require'),'undefined');const f=await wall.webContents.executeJavaScript('QingchiPond.inspect().frames');await wait(600);a.ok(await wall.webContents.executeJavaScript('QingchiPond.inspect().frames')>f);mark('desktop-window-full-display-bounds-and-animation',{displays,windows});
+  fs.writeFileSync(path.join(out,'desktop-layer.png'),(await wall.webContents.capturePage()).toPNG());await ev('qingchiDesktop.toggleWallpaper()');a.equal(native.inspect().windows.length,0);mark('desktop-toggle-cleanup');
+  await ev('document.querySelector("#life-open").click()');await wait(400);fs.writeFileSync(path.join(out,'final.png'),(await win.webContents.capturePage()).toPNG());a.deepEqual(errors,[]);
+  const report={result:'PASS',fresh,bundled:require('../package.json').qingchiPackaged===true,checks,errors,platform:process.platform,arch:process.arch,userData:app.getPath('userData')};fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));clearTimeout(deadline);win.setAlwaysOnTop(false);app.quit();
+ }catch(e){fs.writeFileSync(path.join(out,'failure.json'),JSON.stringify({error:e.stack,checks,errors},null,2));console.error(e.stack);clearTimeout(deadline);native.stopWalls();app.exit(1);}
+};

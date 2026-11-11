@@ -1,0 +1,16 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/spring/bed-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-b4f2bdcc-51b6-4cf8-bd5e-3cb595816c04.png",
+  "sha256": "e4967deb9da7838902eaa7061cd1306cece2a528a737f7b5157d59f82eba61c0",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "alpha_extrema": null,
+  "prompt": "Create an ORIGINAL 16:9 landscape game background asset, the underwater BED layer of a quiet early-spring Chinese garden pond. Orthographic directly top-down, naturalistic finely hand-painted texture, elegant restrained atmospheric realism, no tilted perspective. Wide low-contrast open central 75% with pale stone silt, scattered tiny rounded pebbles, subtle reddish sediment patches, very sparse young aquatic shoots. Uneven margins with pale smooth limestone and moss at upper-left and lower-right, slender submerged roots, a few settled faded pink petals resting on the bed near the edge (not a carpet). Soft diffuse neutral daylight from upper-left. Palette warm stone grey, pale celadon, dusty rose only in tiny accents. This must be a distinct landscape composition, not a recolor of another season. IMPORTANT the final game renders water and life above this separately: NO fish, animals, lotus leaves, floating flowers, overhanging branches, surface reflections, caustic light patterns, waves, ripples, tree shadows, text, border, logos, interface or watermark. Detailed quiet texture, no central object, no heavy contrast, fully opaque.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

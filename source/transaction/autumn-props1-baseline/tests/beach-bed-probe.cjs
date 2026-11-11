@@ -1,0 +1,2 @@
+const M=require(require('node:path').resolve(process.argv[2]||'app/scene-manifest.js'));
+const map='beach',season='summer';console.log(JSON.stringify({input:'beach summer source-point(0.1,0.1)',bed:M.mapPlan(map,season).bed,rock:M.rockAt(season,.1,.1,map),rockPolygons:M.rocksFor?M.rocksFor(map,season).length:M.rocks[season].length,lotusBed:M.mapPlan('lotus',season).bed,clearBed:M.mapPlan('clear',season).bed,winterBed:M.mapPlan(map,'winter').bed}));

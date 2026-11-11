@@ -1,0 +1,49 @@
+清池 0.1.0 原型来源清单
+
+鱼池：Rezaye Rabbi (RzX) / interactive-koi-pond
+来源：https://github.com/rzrabbi/interactive-koi-pond
+本地来源快照：2026-11-06 调研下载的公开 master 源码；原件 SHA-256 见 transaction/VERIFICATION.txt。
+许可：MIT，全文保留于 app/vendor/LICENSE-koi.txt，应用设置中也可阅读。
+修改：组件输入隔离、暂停与可见性边界、宿主控制/诊断接口。
+
+桌面运行时：Electron 45.2.3（官方 npm 包及官方校验的二进制）
+来源：https://github.com/electron/electron
+Electron MIT 及 Chromium 等第三方许可随运行时保留。未将 Electron 商标作为本产品品牌。
+
+独立实现：core.js、app.js、布局样式、SVG 图标、Electron 宿主、测试和打包脚本。
+未从碧潭观鱼或 TouchFish 解包目录复制任何商业代码、美术、声音、字体或账号/支付数据。
+本项目暂用工作名“清池”，不是已查重或注册的商业品牌。无账号服务、广告、支付或远程激活。
+
+
+Penglai 3D scene: https://github.com/puerr/penglai-cube
+Pinned commit 3f797d50263df816ad132e609c01aee533954bb2. MIT, Copyright (c) 2026 puerr. Modified copy with independent Qingchi fishing-world and UI. Full license: app/penglai/LICENSE.
+Three.js r169: app/penglai/vendor/three/LICENSE (MIT).
+Open-Meteo weather: https://open-meteo.com/ — CC BY 4.0 data attribution; free non-commercial API used for local personal trial, not a commercial service license. Weather model estimates; not device sensor readings.
+
+0.5 新增：近景湖岸、松树、岩石、莲花、竹竿与手部，以及4种鱼体模板/12种配色图鉴，由本项目 Blender 脚本原创制作。源文件 art/v5/penglai-nearshore.blend；未导入商业素材。Three.js GLTFLoader 为现有 r169/MIT。近景水面复用项目原有 MIT 平面反射工具并编写独立水面着色器。原始蓬莱岛形/建筑/植被仍用于远景，全岛视图保留。
+
+0.6：原创横向命中/长按连按收线规则；浅水阻尼波纹、尾迹、投食环、光影与背景折射；原清池底图不变。新增6种真实观赏鱼学名，模型/钓点/体长/混养为游戏化简化。物种依据及来源见 evidence/v6/species-sources.txt；新鱼模型构建源 art/v6/build_ornamental.py，未导入外部商业素材。
+
+0.7 additions: original task-authored Blender garden models/renders and detailed nearshore; no new external art dependencies. Existing Three.js and Penglai attribution retained.
+
+0.8 additions: original procedural SVG maps (art/v8/build_maps.py), original Blender frog/butterfly/egret/crab models and renders (art/v8/build_animals.py). No new third-party art or runtime dependencies. Existing notices retained.
+
+0.9 候选版新增：四季池底与透明前景为本任务独立生成素材，提示词与生成记录见 art/v9；未从参考安装包提取后打包。分件动物绘制与姿态为 app/animal-art.js 原创 Canvas 几何；水面场为本项目有限差分/折射实现。native-helper/QingchiSystemBridge.swift 为本项目 macOS AppKit/ApplicationServices 小型系统桥，不读取键入文本，不主动请求辅助功能权限。无新增第三方依赖。AI 生成素材不作独占版权或商业清权保证。
+
+0.9 beta.7 夏季沙滩增量：app/assets/scenes/beach/summer/bed-v1.png 由本任务内置图像工具原创生成，仅以本项目既有夏季池底作材质与光照参考；没有使用参考安装包素材。原始提示词、生成路径、像素尺寸和SHA-256见 art/beach-bed-01/prompts.json 与 assets.json。AI生成位图不等于可编辑分层绘画源文件，也不作独占版权或商业清权保证；可编辑配置/遮挡/布置代码及原始PNG随源码保留。
+
+0.9 beta.8 春季沙滩增量：独立细沙池底 app/assets/scenes/beach/spring/bed-v1.png 由本任务内置图像工具生成；只参考本项目自有池底，没有使用参考安装包素材。提示词及SHA-256见 art/spring-beach-01。春季沙滩青石复用本项目已有 clear-sample-01/rock.png。原始PNG为可编辑位图而非分层绘画源，不作独占版权或商业清权保证。
+
+0.9 beta.9 秋季沙滩增量：app/assets/scenes/beach/autumn/bed-v1.png 由本任务内置图像工具独立生成，只以本项目夏季沙底质量和秋季池底色彩作参考；不是简单调色，不使用参考安装包素材。提示词及SHA-256见 art/autumn-beach-01。秋季沙滩青石复用本项目既有自然青石。PNG为位图源而非分层绘画源，不作独占版权或商业清权保证。
+
+0.9 beta.10 冬季沙滩增量：app/assets/scenes/beach/winter/bed-v1.png 是本任务内置图像工具原创生成的中性矿物细沙，不是前三季调色。仅以本项目夏季质感与冬季矿物色作参考，未用参考安装包素材。提示词和SHA见art/winter-beach-01；积雪前景与植物保留原有独立层。PNG不是分层绘画源，不作独占版权或商业清权保证。
+
+0.9 beta.11 春季布置：app/assets/garden-seasonal/spring/lotus-v1.png 和 reeds-v1.png 由本任务内置图像工具以本项目自有夏季植被为编辑参考生成，具有真实RGBA透明通道；未使用参考安装包素材。原始提示词、来源、SHA和透明边界见art/spring-garden-01；青石复用已有自然材质。PNG是位图源而非分层绘画文件，不作独占版权或商业清权保证。
+
+0.9 beta.12 秋季布置：app/assets/garden-seasonal/autumn/lotus-v1.png 和 reeds-v1.png 由本任务内置图像工具以项目自有夏季植被为编辑参考生成，包含卷边枯荷、莲蓬和干燥芦苇，均为真实RGBA；未用参考安装包图片。原始提示词、来源、SHA和透明边界见art/autumn-garden-01；青石复用已有自然材质。PNG是可编辑位图而非分层绘画源，不作独占版权或商业清权保证。
+
+0.9 beta.13 鱼体运动：在已保留许可的pond.js上自有实现有限角连续骨架与尾部行波；不引入新第三方依赖或图片，不替换原许可和署名。
+
+0.9 beta.14 在同一自有骨架机制上补充连续游走和速度方向限角；保留全部上游许可，不引入依赖或新外部资源。
+
+2026-11-08 beta15 autumn foreground: assets/scenes/autumn/foreground-osmanthus-v2.png is a new original built-in image_gen output. Prompt/source/hash/alpha metadata: art/osmanthus-01. Prior original ginkgo foreground retained. No reference-package art is embedded. AI bitmap source is not a layered painting.

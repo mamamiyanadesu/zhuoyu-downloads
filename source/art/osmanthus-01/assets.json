@@ -1,0 +1,24 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/autumn/foreground-osmanthus-v2.png",
+  "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-bf4c62bc-3af3-405a-8c9e-8d57affe5dd8.png",
+  "sha256": "2330854be04a9f27b5fa9ce30ea107ba0609243212f04ce782598110fafae4fb",
+  "size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    254
+  ],
+  "alpha_gt32_bbox": [
+    33,
+    74,
+    1482,
+    987
+  ],
+  "alpha_nonzero_pixels": 295829,
+  "alpha_ge240_pixels": 170366,
+  "original_foreground_preserved": "7f3d7365ae99517915b01bd7b2eb772a4505c9299901ad10c3a55948e06f77a4",
+  "scope": "Original generated replacement osmanthus foreground sprite only. Hidden RGB may contain glow in alpha0 pixels; native compositing must be inspected. AI bitmap not editable layered painting."
+}

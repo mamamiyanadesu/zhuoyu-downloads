@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "reference_role": "Original autumn branch composition only",
+  "reference": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/autumn/foreground-v1.png",
+  "prompt": "Create new replacement3:2 autumn foreground sprite, diagonal lowerleft to upperright, strictly overhead original Osmanthus fragrans branch. Replace all ginkgo leaves with paired leathery pointed olivegreen leaves and tiny dense goldencream fourlobed axillary blossoms on slender woody twigs. Soft upperleft day light, natural photographic materials, complete silhouette and generous alpha margin, no water/background/matte/glow/shadowplane/text. Preserve branch composition only; not sourceimage pixels.",
+  "generation_round": 1
+}

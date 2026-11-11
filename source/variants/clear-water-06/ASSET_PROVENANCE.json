@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "spring_target": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/ink-summer-05/source/app/assets/scenes/spring/peach-master-v2.png",
+    "summer_reference": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/ink-summer-05/source/app/assets/clear-pond-v2.png",
+    "rejected_flat_summer": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/ink-summer-05/source/app/assets/clear-pond-clean-v5.png"
+  },
+  "outputs": {
+    "spring": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/clear-water-06/source/app/assets/scenes/spring/peach-clear-v6.png",
+    "summer": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/clear-water-06/source/app/assets/clear-pond-depth-v6.png"
+  },
+  "method": "image_gen targeted base-water appearance edits, plus live shader soft/fine convergence blend. Generated corner artwork retains composition but is not pixel-identical.",
+  "preserved": {
+    "fish_sha": "dd08dc3f9e3aac799f1a4d01d4a280ef29b972053320a39e234faabf4f0b8c96",
+    "leafWake_sha": "32c4cca2f935e7d0cc489a0e8eef2909dad00e23202a0743b4f6b749af120ae2"
+  },
+  "boundaries": [
+    "No claim that user has approved new water appearance",
+    "No performance fix claimed",
+    "No return to fixed ripple rings",
+    "Autumn/winter deferred"
+  ]
+}

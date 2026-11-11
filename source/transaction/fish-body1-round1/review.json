@@ -1,0 +1,16 @@
+{
+  "status": "geometry PASS but heading alignment insufficient;notaccepted",
+  "baseline_heading_error": {
+    "median": 0.355464,
+    "p95": 1.206746,
+    "over90": 170,
+    "samples": 7560
+  },
+  "candidate13_heading_error": {
+    "median": 0.392707,
+    "p95": 1.620805,
+    "over90": 405,
+    "samples": 7524
+  },
+  "next": "Bound locomotion yaw and replace perframe random walk with continuous wander; retain shape solver, verify functional feed/alarm outcomes instead of exact oldpath"
+}

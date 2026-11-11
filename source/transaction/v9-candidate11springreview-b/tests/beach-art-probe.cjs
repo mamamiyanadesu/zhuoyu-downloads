@@ -1,0 +1,1 @@
+'use strict';const path=require('node:path'),S=require(path.resolve(process.argv[2]));console.log(JSON.stringify({input:'normal clear/lotus/beach x spring/summer/autumn/winter; lotus/reeds/rock',cases:['clear','lotus','beach'].flatMap(map=>['spring','summer','autumn','winter'].map(season=>({map,season,natural:S.naturalStyle(map,season),bundle:S.bundle(map,season)})))}));

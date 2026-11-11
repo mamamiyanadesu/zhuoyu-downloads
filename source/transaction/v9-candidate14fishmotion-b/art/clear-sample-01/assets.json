@@ -1,0 +1,62 @@
+{
+  "lotus": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-0f0294f3-622d-4130-847e-f9c4b2c02bcc.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/clear-sample-01/lotus.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1234,
+      1254
+    ],
+    "sha256": "cc4a8646f42d0e4f339bcaa95060f2d8a7eb246514e951bd2f6dd2b4298991a8"
+  },
+  "reeds": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-c9acc0c3-08bb-43ae-a06c-65ed321b7786.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/clear-sample-01/reeds.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      19,
+      1248,
+      1254
+    ],
+    "sha256": "3368a754dabced2bac0061c28d30a221ae3c4eeee0228b02a6e6b3b207720376"
+  },
+  "rock": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-319f4205-d34f-4d9a-89b2-3b0ae782ce28.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/clear-sample-01/rock.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      31,
+      1245,
+      1254
+    ],
+    "sha256": "8763259de598c0ca604f70c499a27d789b52f6d4d5086ae933c26d0a65ccd435"
+  }
+}

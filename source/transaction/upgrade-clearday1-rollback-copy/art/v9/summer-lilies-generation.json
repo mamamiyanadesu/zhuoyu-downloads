@@ -1,0 +1,13 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/summer/lilies-v1.png",
+  "sha256": "0e643a2df21fe5aa9741b9b8bd1aa7a2229e47e5d88a9f8e46bfee9f1a7f0350",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-76a78625-818d-48c6-8532-14063db59120.png",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "prompt": "Original top-down transparent sprite: asymmetrical cluster of four water-lily leaves and one small blush-pink flower; detailed radial veins/notches, muted jade/olive, fine naturalistic hand-painted botanical material, diffuse upper-left light. Full object within image with margin, transparent gaps. No water, soil, rocks, reflection, background, UI, text, animals, or baked checkerboard. Separate foreground above live fish/water."
+}

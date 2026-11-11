@@ -1,0 +1,1 @@
+'use strict';const test=require('node:test'),a=require('node:assert/strict'),path=require('node:path'),probe=require('./beach-poses-probe.cjs');test('summer automatic lily clusters yield to manual props on both refined maps',()=>{a.deepEqual(probe(path.join(__dirname,'../app/scene-art.js')),[{map:'clear',poses:2},{map:'lotus',poses:0},{map:'beach',poses:0}]);});

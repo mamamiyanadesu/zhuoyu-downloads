@@ -1,0 +1,10 @@
+{
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/summer/bed-v1.png",
+  "sha256": "375e9167ff2b0c6bb65825ec96fc124a23feed9e84e3394178993ec6a31c1994",
+  "generator": "built-in image_gen",
+  "use": "original summer underwater bed layer",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-8bfa8685-7628-4784-94b9-c2dacb538da9.png",
+  "reference_assets_copied": false,
+  "prompt": "Original 16:9 orthographic pond BED only, fine limestone silt, small river pebbles, moss and aquatic vegetation at irregular margins, low-contrast spacious central 75%, naturalistic hand-painted detail, muted sage/celadon/cream, diffuse light upper-left. No caustics, ripples, tree shadows, fish, floating plants, UI, text or watermark. Dynamic layers rendered separately.",
+  "review": "Viewed generated output: directly overhead, open textured center and detailed stone margins; no fish or baked water caustics; needs runtime water tint/layers before visual acceptance."
+}

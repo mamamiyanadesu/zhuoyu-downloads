@@ -1,0 +1,6 @@
+{
+  "MODIFIED_FILE": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/vendor/pond.js",
+  "DIFF_FILE": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/DIFF.patch",
+  "VERIFICATION": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/VERIFICATION.txt",
+  "ROLLBACK": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/ROLLBACK.sh"
+}

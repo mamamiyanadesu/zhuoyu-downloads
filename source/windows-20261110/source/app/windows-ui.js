@@ -1,0 +1,1 @@
+(()=>{'use strict';document.title='桌鱼 · Windows 测试版';const h=window.qingchiDesktop;if(h?.platform!=='win32')return;const version=document.querySelector('.version');if(version)version.textContent='Windows x64 · 待真机验收';})();

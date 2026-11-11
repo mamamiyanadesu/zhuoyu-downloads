@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm');
+const calls=[];const ctx=new Proxy({}, {get:(_,k)=>(...v)=>calls.push([k,...v]),set:()=>true});
+const canvas={getContext:()=>ctx};
+const window={innerWidth:1280,innerHeight:800,devicePixelRatio:1,addEventListener:()=>{}};
+const document={hidden:false,body:{style:{}},getElementById:()=>canvas};
+const math=Object.create(Math);math.random=()=>.4;
+const sandbox=vm.createContext({window,document,Math:math,performance:{now:()=>0},requestAnimationFrame:()=>{}});
+vm.runInContext(fs.readFileSync(process.argv[2],'utf8'),sandbox);calls.length=0;
+vm.runInContext('drawCaustics(1/30)',sandbox);
+console.log(JSON.stringify({input:'seed .4; drawCaustics(1/30)',fishColor:vm.runInContext('kois[0].color',sandbox),largeLightCircles:calls.filter(x=>x[0]==='arc').length,lightStrokes:calls.filter(x=>x[0]==='stroke').length}));

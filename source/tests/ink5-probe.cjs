@@ -1,0 +1,10 @@
+const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=process.argv[2],handlers={},calls={};let seed=17;const math=Object.create(Math);math.random=()=>((seed=seed*16807%2147483647)-1)/2147483646;
+const ctx=new Proxy({},{get:(_,n)=>(...args)=>{calls[n]=(calls[n]||0)+1;return {addColorStop(){}}},set:()=>true});
+const canvas={width:0,height:0,getContext:()=>ctx};const window={innerWidth:1280,innerHeight:800,devicePixelRatio:1,addEventListener:(n,f)=>(handlers[n]??=[]).push(f)};
+const document={hidden:false,getElementById:()=>canvas,body:{style:{}},addEventListener(){}};
+const sandbox=vm.createContext({window,document,performance:{now:()=>0},requestAnimationFrame(){},console,Math:math});vm.runInContext(fs.readFileSync(path.join(root,'source/app/vendor/pond.js'),'utf8'),sandbox);
+vm.runInContext("window.QingchiPond.configure({fishArt:'ink'});kois[0].draw(ctx)",sandbox);
+for(const [target,x,y]of [[{closest:()=>({})},100,100],[{closest:()=>null},500,300]])for(const fn of handlers.click)fn({clientX:x,clientY:y,target});
+const result=vm.runInContext("({fishArt:window.QingchiPond.inspect().fishArt||'original',food:foods.length,fish:kois.length})",sandbox);
+console.log(JSON.stringify({input:'ink draw + widget click + water click',...result,drawCalls:calls,summerBed:require(path.join(path.resolve(root),'source/app/scene-manifest.js')).assetsFor('clear','summer').bed,twoSceneController:fs.existsSync(path.join(root,'source/app/spring-summer-preview.js'))}));

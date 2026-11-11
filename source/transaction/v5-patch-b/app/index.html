@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>清池 · 桌面小憩</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="life.css">
+<script defer src="core.js"></script><script defer src="life-core.js"></script><script defer src="environment.js"></script><script defer src="vendor/pond.js"></script><script defer src="app.js"></script><script defer src="life-ui.js"></script>
+</head>
+<body>
+<div class="pond-bed" aria-hidden="true"></div><div class="sunlight" aria-hidden="true"></div>
+<canvas id="wallpaper-canvas" aria-label="互动鱼池，点击空白水面投喂"></canvas>
+<canvas id="environment-canvas" aria-hidden="true"></canvas>
+<div class="leaves" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<header data-widget>
+ <a class="brand" href="#" aria-label="清池首页"><img src="icon.svg" alt=""><span>清池<small>QINGCHI / 04</small></span></a>
+ <div class="top-actions"><span class="version">Mac · 蓬莱垂钓 0.4</span><button id="pause-pond" class="subtle">暂停鱼池</button><button id="immersive" class="subtle">收起组件 <kbd>H</kbd></button><button id="open-settings" class="round" aria-label="打开设置">⚙</button></div>
+</header>
+<main>
+ <section class="moment" data-widget><div class="eyebrow">给自己，留一池清静。</div><time id="clock" class="clock">--:--</time><p id="calendar"></p><div class="small-rule"></div><h1>把今天，<br>慢慢过。</h1><p class="description">鱼在游，日子也在向前。<br>先记下一件值得做的小事。</p></section>
+ <aside class="widgets" data-widget aria-label="桌面组件">
+  <div class="widget-heading"><span class="eyebrow">池畔工作台</span><span class="privacy-dot">只在本机</span></div>
+  <nav class="tabs" aria-label="组件切换"><button id="tab-note" aria-pressed="true">手笺</button><button id="tab-tasks" aria-pressed="false">待办 <span id="task-badge">0</span></button><button id="tab-focus" aria-pressed="false">专注</button></nav>
+  <section id="panel-note" class="panel"><div class="section-title"><h2>随手记一笔</h2><span>不用写得很完整。</span></div><label class="sr-only" for="note">手笺内容</label><textarea id="note" maxlength="4000" placeholder="此刻想到的、待会要做的，\n或只是今天看见的一片云。"></textarea><div class="note-bottom"><span>自动保存在当前设备</span><span id="note-count">0 / 4000</span></div></section>
+  <section id="panel-tasks" class="panel" hidden><div class="section-title"><h2>今天的小事</h2><span id="task-progress">0 件已完成</span></div><form id="task-form"><label class="sr-only" for="task-input">添加今天的待办</label><input id="task-input" maxlength="160" placeholder="一次只添一件事" autocomplete="off"><button type="submit" aria-label="添加待办">＋</button></form><ul id="task-list"></ul><p id="task-empty" class="empty">暂时没有待办。<br><span>留白，也是一种安排。</span></p><button id="toggle-history" class="text-button">查看全部日期</button></section>
+  <section id="panel-focus" class="panel" hidden><div class="section-title"><h2>留一刻给自己</h2><span>时间到了，停下来看看鱼。</span></div><div class="focus-modes"><button id="focus-mode" aria-pressed="true">专注 25 分钟</button><button id="break-mode" aria-pressed="false">休息 5 分钟</button></div><div id="timer" class="timer" role="timer" aria-label="剩余时间">25:00</div><p id="timer-status">还没开始，准备好再出发。</p><div class="custom-timer-row"><label>提醒分钟 <input id="custom-minutes" type="number" min="1" max="120" value="15"></label><label><input id="custom-repeat" type="checkbox">确认后循环</label><button id="custom-timer-start" class="text-button">自定义提醒</button></div><div class="timer-buttons"><button id="timer-start" class="primary">开始专注</button><button id="timer-reset" class="secondary">重置</button></div><p class="focus-stats">今日完成 <strong id="focus-count">0</strong> 次专注</p><p class="fine">刷新后继续计时；关闭页面期间不弹提醒，重新打开时补记到时状态。</p></section>
+  <div id="save-status" role="status" class="save-status">本地存档就绪</div>
+ </aside>
+</main>
+<div class="pond-tools" data-widget><button id="life-open" class="subtle">我的鱼 <span id="my-fish-count">0</span></button><button id="fishing-open" class="subtle">去蓬莱钓鱼</button><button id="environment-open" class="subtle">四季天气</button></div>
+<div id="life-toast" role="status" class="life-toast" hidden></div>
+<div id="reminder" role="alert" class="reminder" data-widget hidden><span class="reminder-mark">◷</span><div><strong id="reminder-title">这一刻，完成了。</strong><p id="reminder-text">把目光交给水面，休息一下。</p></div><button id="dismiss-reminder">知道了</button></div>
+<footer data-widget><div><span class="live-dot"></span><span id="pond-status">18 尾锦鲤 · 30 FPS 上限</span><span class="footer-divider">/</span><span id="interaction-hint">点击水面 · 喂一喂</span></div><button id="backup-shortcut" class="text-button">备份与设置 ↗</button></footer>
+<button id="restore-widgets" data-widget class="restore" hidden>清池 · 展开组件</button>
+<dialog id="settings" data-widget aria-labelledby="settings-title"><div class="dialog-top"><div><span class="eyebrow">让池塘适合你</span><h2 id="settings-title">鱼池与数据</h2></div><button id="close-settings" class="round" aria-label="关闭设置">×</button></div><div class="settings-body">
+ <label class="setting-row">鱼群数量 <select id="fish-count"><option value="8">8 尾 · 清疏</option><option value="18">18 尾 · 恰好</option><option value="30">30 尾 · 热闹</option></select></label>
+ <label class="setting-row">动画帧率上限 <select id="fps"><option value="30">30 FPS · 节能</option><option value="60">60 FPS · 流畅</option></select></label>
+ <label class="setting-row">动态水光 <input id="caustics" type="checkbox"></label>
+ <label class="setting-row">互动模式 <select id="interaction"><option value="interact">点击投喂</option><option value="quiet">只看鱼 · 不投喂</option></select></label>
+ <div class="settings-section"><h3>数据只留在你这里</h3><p>无账号、无联网请求。手笺与待办保存在当前浏览器或宿主中；清理浏览器数据可能丢失，请定期导出。</p><div class="backup-buttons"><button id="export-data" class="secondary">导出备份</button><button id="import-data" class="secondary">导入备份</button><input id="import-file" type="file" accept="application/json,.json" hidden></div><p id="import-status" role="status"></p></div>
+ <div class="settings-section"><h3>运行检查</h3><button id="test-reminder" class="text-button">测试到时提醒（3 秒）</button><p>这是独立存档的 Mac 功能试用版。新功能均离线运行；未接入真实天气、账号、支付。桌面观赏由下方按钮明确开启。</p></div>
+ <div class="settings-section"><h3>桌面与存档</h3><button id="desktop-mode" class="secondary">开启桌面观赏（实验）</button><button id="recover-save" class="text-button">恢复上一版自动备份</button><p id="desktop-mode-status">桌面层设置为鼠标穿透；多屏、休眠和桌面图标点击尚待进一步验收。互动在工具窗口操作。</p><p>新版完整备份包含手笺、待办、鱼、成长、图鉴、鱼币与故事。自动备份保留最近一次写入前的状态。</p></div><details><summary>来源与许可</summary><p>鱼池引擎基于 Rezaye Rabbi 的 Interactive Koi Pond（MIT）。清池的组件、布局和数据逻辑独立实现，未复制碧潭或 TouchFish 的商业代码与素材。</p><details><summary>查看完整鱼池 MIT 许可</summary><pre class="license-text">MIT License
+
+Copyright (c) 2026 Rezaye Rabbi (RzX)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre></details></details>
+ </div></dialog>
+<dialog id="life-dialog" data-widget aria-labelledby="life-title">
+ <div class="life-heading"><div><span class="eyebrow">QINGCHI / POND LIFE</span><h2 id="life-title">池塘生活</h2></div><div class="life-heading-actions"><span id="wallet">60 鱼币</span><button id="life-close" class="round" aria-label="关闭池塘生活">×</button></div></div>
+ <nav class="life-tabs" aria-label="池塘功能"><button data-life-tab="fish" aria-pressed="true">我的鱼</button><button data-life-tab="draw">画一尾鱼</button><button data-life-tab="rank">吃食榜</button><button data-life-tab="environment">四季天气</button><button data-life-tab="fishing">出发去蓬莱 ↗</button><button data-life-tab="basket">鱼篓</button><button data-life-tab="dex">图鉴</button><button data-life-tab="shop">小店</button><button data-life-tab="salvage">打捞册</button></nav>
+ <p id="life-status" class="life-status" role="status">正在读取本机存档…</p>
+ <section data-life-panel="fish"><div class="life-section-head"><div><h3>给每一尾鱼，一个名字。</h3><p>鱼苗在池塘运行约 30 分钟后长成；投喂每次加 45 秒，每小时最多加 5 分钟。离池暂停成长。</p></div><button id="new-fish" class="primary">画一尾新鱼</button></div><div id="fish-cards" class="fish-grid"></div></section>
+ <section data-life-panel="draw" hidden><div class="editor-layout"><div><div class="editor-caption"><span>在鱼身上画花纹</span><span id="stroke-count">0 笔</span></div><canvas id="fish-editor" width="720" height="400" tabindex="0" aria-label="自绘鱼画布"></canvas><div class="editor-tools"><label>画笔 <input id="brush-color" type="color" value="#cf815e"></label><label>大小 <input id="brush-size" type="range" min="2" max="20" value="8"></label><label><input id="brush-mirror" type="checkbox">对称</label><button id="brush-undo">撤销</button><button id="brush-redo">重做</button><button id="brush-clear">清空笔画</button></div><p class="fine">支持鼠标/触控笔；花纹保存为可编辑笔画，不上传图片。试用版最多 24 尾自有鱼。</p></div><div class="editor-properties"><label>名字<input id="fish-name" maxlength="24" placeholder="给它起个名字" value="我的锦鲤"></label><div class="color-pair"><label>底色<input id="fish-base" type="color" value="#e8e2ce"></label><label>斑纹<input id="fish-accent" type="color" value="#c78160"></label></div><label>胸鳍大小<input id="fish-fin" type="range" min="60" max="150" value="100"></label><label>鱼尾大小<input id="fish-tail" type="range" min="60" max="150" value="100"></label><label class="inline"><input id="fish-fry" type="checkbox" checked>从鱼苗开始养</label><button id="fish-save" class="primary">保存并放入池塘</button><button id="fish-new-draft" class="secondary">新建草稿</button><p id="editor-save-note" class="fine">新鱼默认入池。编辑旧鱼会保留已有成长与吃食记录。</p></div></div></section>
+ <section data-life-panel="rank" hidden><div class="life-section-head"><div><h3>今天，谁吃得最香？</h3><p>本次运行的实时吃食榜；重新打开会重计。自有鱼累计吃食另存于“我的鱼”。</p></div><button id="refresh-rank" class="secondary">刷新榜单</button></div><ol id="feeding-rank" class="feeding-rank"></ol></section>
+ <section data-life-panel="environment" hidden><div class="weather-in-pond"><h3>杭州临平 · 真实当地天气</h3><p id="pond-weather-status">城市级位置，非 GPS 定位。启用后向 Open-Meteo 请求天气，数据为模型估算。手动改天气将停止自动联动。</p><button id="pond-weather-on" class="primary">启用 / 刷新当地天气</button><button id="pond-weather-off" class="secondary">停用联网</button></div><div class="life-section-head"><div><h3>让水面，跟着心情变化。</h3><p>全部是离线视觉模式，不代表真实天气。夜色保留亮度下限，不把池塘变成黑屏。</p></div></div><div class="environment-grid"><label>季节<select id="season"><option value="auto">跟随月份</option><option value="spring">春 · 落花</option><option value="summer">夏 · 清浅</option><option value="autumn">秋 · 暖叶</option><option value="winter">冬 · 冷玉</option></select></label><label>光线<select id="daylight"><option value="auto">跟随本机时间</option><option value="day">白昼</option><option value="sunset">暮色</option><option value="night">清夜</option></select></label><label>手动天气<select id="weather"><option value="cloudy">多云</option><option value="clear">晴</option><option value="rain">细雨</option><option value="snow">轻雪</option></select></label></div><button id="preview-environment" class="primary">收起面板，看水面</button><p class="fine">本版季节由调色和动态粒子组成，仍使用清浅池底素材；不是四套全新摄影场景。</p></section>
+ <section data-life-panel="fishing" hidden><div class="life-section-head"><div><h3>把这一刻，交给鱼漂。</h3><p>抛竿 → 等待咬钩 → 提竿 → 按住/松开控制力度。让指针留在绿色区，进度满格即可钓获。</p></div><span id="rod-label">竹影竿</span></div><div class="fishing-stage"><div class="fishing-water"><div class="float-line"></div><div id="fishing-float" class="fishing-float"></div><span id="fishing-phase">准备好，就抛一竿。</span></div><div id="tug-area" hidden><div class="tug-label"><span>松 ← 力度 → 紧</span><span id="tug-percent">0%</span></div><div class="tug-track"><i id="tug-target"></i><b id="tug-pointer"></b></div><progress id="catch-progress" max="1" value="0"></progress></div><p id="fishing-message">这是离线轻玩法；鱼币不是现金，也没有购买入口。</p><div class="fishing-actions"><label><input id="use-bait" type="checkbox">使用鱼饵 <span id="bait-count">0</span></label><button id="cast-button" class="primary">抛竿</button><button id="tug-button" class="primary" hidden>按住拉线 · 松手放线</button><button id="cancel-cast" class="secondary" hidden>收竿</button></div></div></section>
+ <section data-life-panel="basket" hidden><div class="life-section-head"><div><h3>把喜欢的，留在池塘。</h3><p>最多 12 尾。可锁定、出售或放流；“放入池塘”会转入我的鱼，之后不再作为鱼篓商品。</p></div><span id="basket-count">0 / 12</span></div><div id="basket-cards" class="fish-grid"></div></section>
+ <section data-life-panel="dex" hidden><div class="life-section-head"><div><h3>六种颜色，六次相遇。</h3><p>清池原创虚构观赏鱼色系，不对应生物分类。收集进度不会因出售而丢失。</p></div></div><div id="dex-cards" class="fish-grid"></div><p id="catch-records" class="record-strip"></p></section>
+ <section data-life-panel="shop" hidden><div class="life-section-head"><div><h3>池边的小店</h3><p>更好的鱼竿拓宽绿色容错区；鱼饵提高稀有色系权重。没有真钱支付。</p></div></div><div id="shop-cards" class="fish-grid"></div></section>
+ <section data-life-panel="salvage" hidden><div class="life-section-head"><div><h3>水边拾来的小事</h3><p>每完成 4 次钓获，发现一件原创小物；共 5 件。已经找到的会一直保留。</p></div></div><div id="salvage-cards" class="story-grid"></div></section>
+</dialog>
+
+</body></html>

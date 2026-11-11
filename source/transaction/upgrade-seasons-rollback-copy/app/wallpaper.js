@@ -1,0 +1,1 @@
+window.qingchiWallpaper.subscribe(s=>{window.QingchiHabitat?.sync(s.habitats);window.QingchiGarden?.sync(s.garden||[]);QingchiPond.setCatalog(s.fish);QingchiEnvironment.apply(s.env);QingchiPond.configure({fishCount:s.settings.fishCount,fishSize:.7,enableFeeding:false,enableCaustics:s.settings.caustics,fps:s.settings.fps});});

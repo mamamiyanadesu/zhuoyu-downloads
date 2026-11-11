@@ -1,0 +1,450 @@
+{
+  "ACTIVE_OBJECT": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/occlusion-clean-16",
+  "LAST_CONFIRMED_RESULT": "User accepted16 visuals; website draft and3 real scene captures written; two name conflicts found.",
+  "NEXT_EXECUTABLE_ACTION": "Finalize local website support/privacy pages, launch local preview and validate while keeping brand generic until user selects nonconflicting name.",
+  "INPUT_PATHS": [
+    "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/launch-prep-20261109/site/dist",
+    "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/launch-prep-20261109/release/name-screening.json",
+    "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/occlusion-clean-16"
+  ],
+  "ACCEPTANCE_EVENT": "Verified intro website and MAS preparation artifacts; actual submission not authorized.",
+  "ROLES": {
+    "MODIFIED_FILE": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/vendor/pond.js",
+    "DIFF_FILE": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/DIFF.patch",
+    "VERIFICATION": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/VERIFICATION.txt",
+    "ROLLBACK": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/ROLLBACK.sh"
+  },
+  "scope": "Task-scoped game and water feedback changes on the same Qingchi project; no global config, skills or plugins changed. Original pond background retained.",
+  "pending_requirement": "User visual review of15 pool-bottom detail; selected spring/summer13 and autumn14 are confirmed stylistic direction.",
+  "remaining_features": [
+    "global external shortcut/Option authorization validation",
+    "actual OS fullscreen validation",
+    "Finder physical dragdrop",
+    "physical multi-display/sleep/Spaces/icon click-through",
+    "full source-video continuous viewing and comparative visual/motion review",
+    "aesthetic parity/user approval",
+    "Windows/Intel/notarization"
+  ],
+  "created": "2026-11-06 Asia/Shanghai",
+  "current_platform": "Mac Apple Silicon",
+  "visual_version": "0.9.0-beta.15 pending native art review",
+  "save_directory": "~/Library/Application Support/Qingchi-Trial-v9-candidate",
+  "release_boundaries": [
+    "beta14 app ad-hoc signed,not notarized;older outputs retained",
+    "14targeted native assertions are not wholeproduct regression;beta10 regression historical only",
+    "beta13 intermediate rejected due backwards pose sampling;do not deliver as accepted motion",
+    "No night production;systempermissions deferred;fullreference review and physicalconditions still open"
+  ],
+  "launch_followup": "2026-11-06: launcher shell exit 0, v6 process 21506; native UI showed pond v6; clicked 去蓬莱钓鱼 and confirmed fully rendered fishing scene with enabled cast button. No code changes. Original chat-link failure unproven.",
+  "goal_status": "cleared",
+  "current_candidate": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/releases/蓬莱临水-0.9.0-beta.15-mac-arm64.app",
+  "source_ahead_of_candidate": false,
+  "transaction_pending": false,
+  "resume_progress": "UI11 and water12 implemented in isolated variants; no installed app update.",
+  "latest_report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14_验收进展.txt",
+  "latest_visual_report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-reference-comparison/report.json",
+  "latest_visual_html": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-reference-comparison/index.html",
+  "user_scope_gate": "User chose ours for spring/summer and replica14 for autumn, requested central autumn shallow-water distinction and spring/summer bottom details. Preserve those styles; small detail work only.",
+  "deferred_work": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/shore-refine1-deferred",
+  "day_only_evidence": {
+    "unit": "evidence/v9/clear-day-unit.stdout",
+    "native": "evidence/v9/clear-day-native2/report.json",
+    "baseline": "transaction/clear-day-baseline",
+    "rollback_option": "--clear-day-root",
+    "note": "rollback option added but not yet executed for day-only; existing earlier role evidence does not verify current draft",
+    "transaction": "evidence/v9/clear-day-transaction.json",
+    "package_failure": "evidence/v9/clear-day-package1/failure.json",
+    "package_failure_exit": 1,
+    "distribution": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/clear-day-distribution.json",
+    "final_package": "evidence/v9/clear-day-package2/report.json",
+    "reopen": "evidence/v9/clear-day-package-reopen1/report.json",
+    "full_transaction": "evidence/v9/clearday1-full-transaction.stdout"
+  },
+  "shore_day_progress": {
+    "rounds": 2,
+    "baseline": "evidence/v9/shore-day1-baseline/report.json",
+    "final_source_native": "evidence/v9/shore-day2-art-native2/report.json",
+    "unit": "evidence/v9/shore-day2-fixed-unit.stdout",
+    "rollback": "evidence/v9/shore-day2-transaction.json",
+    "full_source": "evidence/v9/shoreday2-full-transaction.stdout",
+    "scope": "summer-lotus-day source only, not final package or full artistic parity"
+  },
+  "winter_garden_progress": {
+    "assets": "art/winter-garden-01/assets.json",
+    "prompts": "art/winter-garden-01/prompts.json",
+    "baseline_snapshot": "transaction/winter-garden1-baseline/manifest.json",
+    "unit": "evidence/v9/winter-garden1-final-unit.stdout",
+    "baseline_native": "evidence/v9/winter-garden1-baseline/report.json",
+    "probe_baseline": "evidence/v9/winter-garden1-probe-baseline.stdout",
+    "modified_native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/winter-garden1-native/report.json",
+    "rollback": "evidence/v9/winter-garden1-transaction.json",
+    "code": [
+      "app/clear-sample-core.js",
+      "app/garden.js",
+      "app/scene-art.js"
+    ],
+    "failures": "alpha exact255 preflight invalid threshold corrected using near-opaque alpha>=240 (images untouched);2 old winter-false test assumptions updated to new intended winter behavior, retained initial exit1",
+    "full_source": "evidence/v9/wintergarden1-full-transaction.stdout"
+  },
+  "beach_shore_progress": {
+    "rounds": 1,
+    "unit": "evidence/v9/beach-shore1-unit.stdout",
+    "baseline": "evidence/v9/beach-shore1-baseline-committed/report.json",
+    "modified": "evidence/v9/beach-shore1-modified/report.json",
+    "rollback": "evidence/v9/beach-shore1-transaction.json",
+    "full_source": "evidence/v9/beachshore1-full-transaction.stdout",
+    "next": "Summer beach natural props; then distinct bed identity. Not final release."
+  },
+  "beach_art_progress": {
+    "unit": "evidence/v9/beach-art2-unit.stdout",
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/beach-art2-native/report.json",
+    "rollback": "evidence/v9/beach-art1-transaction.json",
+    "full_source": "evidence/v9/beachart2-full-transaction.stdout",
+    "baseline_auto_clusters": 2,
+    "modified_auto_clusters": 0,
+    "rollback_auto_clusters": 2
+  },
+  "candidate4_progress": {
+    "build": "evidence/v9/package-0.9.0-beta.4-build.json",
+    "unit": "evidence/v9/candidate4-unit.stdout",
+    "selected_package": "evidence/v9/candidate4-selected-package/report.json",
+    "selected_checks": 23,
+    "full_source": "evidence/v9/candidate4-full-transaction.stdout",
+    "old_feature_regression": "NOT STARTED",
+    "distribution_zip": "NOT CREATED",
+    "scope": "day visual propagation incremental candidate; no new night production"
+  },
+  "candidate5_progress": {
+    "build": "evidence/v9/package-0.9.0-beta.5-build.json",
+    "unit": "evidence/v9/versionbridge1-unit.stdout",
+    "version_fix": "evidence/v9/versionbridge1-transaction.json",
+    "regression": "evidence/v9/candidate5-regression/native/report.json",
+    "reopen": "evidence/v9/candidate5-regression/reopen/report.json",
+    "remaining_batch_session": null,
+    "alarm_controller": "scripts/verify_alarm_cdp_v9.cjs",
+    "alarm_status": "PASS7",
+    "remaining_batch_exit": 0,
+    "alarm_report": "evidence/v9/candidate5-alarm-native/report.json",
+    "native_summary": "evidence/v9/candidate5-regression-summary/report.json",
+    "native_checks": 51,
+    "full_source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate5dayreview-full-transaction.stdout",
+    "performance": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/package5-performance/candidate-report.json",
+    "documentation": "Corrected on independent delivery app copy; original beta5 build preserved; 4 delivery smoke checks passed",
+    "zip": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate5-distribution.json",
+    "day_and_animal_review": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate5-delivery-review/report.json"
+  },
+  "supplemental_test_scripts_not_in_earlier_source_zip": [
+    "scripts/verify_candidate5_day_matrix.cjs",
+    "scripts/record_candidate5_animals.cjs",
+    "scripts/review_candidate5_motion.py",
+    "scripts/verify_motion_save_v9.cjs",
+    "scripts/review_heading_comparison_v9.py",
+    "scripts/report_candidate6_motion.py",
+    "scripts/verify_visitor_turn_transaction.py",
+    "tests/visitor-turn-probe.cjs",
+    "tests/visitor-turn.test.cjs",
+    "scripts/verify_beach_bed_v9.cjs",
+    "scripts/verify_beach_bed_transaction.py",
+    "scripts/record_beach_bed_v9.cjs",
+    "scripts/report_beach_bed_v9.py",
+    "tests/beach-bed-probe.cjs",
+    "tests/beach-bed.test.cjs"
+  ],
+  "previous_goal_turn_classification": "progress:120s realtime diagnostics;new originalosmanthus art integrated;152tests;immutablebeta15build;beta14nativebaseline. User paused before candidate15 acceptance.",
+  "candidate6_progress": {
+    "build": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/package-0.9.0-beta.6-build.json",
+    "unit": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate6-final-unit.stdout",
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/visitor-turn1-transaction.json",
+    "native_session": null,
+    "native_report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate6-motion-native2/report.json",
+    "native_status": "PASS11 exit0",
+    "full_source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate6motion-full-transaction.stdout",
+    "archive": "not created; beta5 ZIP/source retained unchanged",
+    "motion_seconds": 189.41969466209412,
+    "motion_frames": 5755
+  },
+  "candidate7_progress": {
+    "build": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/package-0.9.0-beta.7-build.json",
+    "unit": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate7-final-unit.stdout",
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate7-beach-bed-native/report.json",
+    "native_checks": 11,
+    "motion": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate7-beach-motion/report.json",
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/beach-bed1-transaction.json",
+    "full_source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate7beach-full-transaction.stdout",
+    "archive": "not created; earlier ZIP/source retained",
+    "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/summer/bed-v1.png",
+    "art_rounds": 2
+  },
+  "spring_beach_progress": {
+    "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/spring/bed-v1.png",
+    "sha256": "8c1b846f540dd0ca60662acda8bc0cbab4969047c29fdfc5b3d94151299b82e7",
+    "baseline_snapshot": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/spring-beach1-baseline/manifest.json",
+    "native_baseline_session": null,
+    "native_baseline": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-beach1-baseline-native/report.json",
+    "production_change": "SceneManifest beachBeds spring assetsFor/rocksFor;ClearSampleCore.asset spring beach rock",
+    "imagegen": "completed; one image; no pending generation",
+    "unit_count": 128,
+    "native_status": "PASS12 packaged beta8",
+    "full_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate8springfinal-full-transaction.stdout"
+  },
+  "candidate8_progress": {
+    "build": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/package-0.9.0-beta.8-build.json",
+    "unit": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-beach2-unit.stdout",
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate8-spring-beach-native/report.json",
+    "checks": 12,
+    "motion": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate8-spring-beach-motion2/report.json",
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-beach1-transaction.json",
+    "full_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate8springfinal-full-transaction.stdout",
+    "review": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate8-spring-review/report.json",
+    "rounds": 2,
+    "archive": "Not created; native .app delivered incrementally, old archives preserved"
+  },
+  "candidate9_progress": {
+    "build": "evidence/v9/package-0.9.0-beta.9-build.json",
+    "native": "evidence/v9/candidate9-autumn-beach-native/report.json",
+    "motion": "evidence/v9/candidate9-autumn-beach-motion/report.json",
+    "full_transaction": "evidence/v9/candidate9autumn-full-transaction.stdout",
+    "review": "evidence/v9/candidate9-autumn-review/report.json"
+  },
+  "candidate10_progress": {
+    "native": "evidence/v9/candidate10-winter-beach-native/report.json",
+    "motion": "evidence/v9/candidate10-winter-beach-motion/report.json",
+    "full_transaction": "evidence/v9/candidate10regression-full-transaction.stdout",
+    "suite_session": null,
+    "suite": "evidence/v9/candidate10-suite/progress.json",
+    "accessibility_observed": false,
+    "tail_session": null,
+    "native_features": "evidence/v9/candidate10-features-native2/report.json",
+    "day_visual_review": "evidence/v9/candidate10-day-review/report.json",
+    "performance_session": null,
+    "selected_native_assertions": 89,
+    "summary": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate10-regression-summary/report.json",
+    "permission_user_response": "2026-11-08: 稍后手动授权，先继续其他验收",
+    "performance": "evidence/v9/candidate10-performance2",
+    "distribution": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate10-distribution.json",
+    "extracted_native_report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate10-archive-native/report.json"
+  },
+  "candidate11_progress": {
+    "unit_count": 135,
+    "native_count": 13,
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate11-spring-props-native2/report.json",
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-props1-transaction.json",
+    "full_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate11springreview-full-transaction.stdout",
+    "review": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate11-spring-review/report.json",
+    "recordings": [
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-props1-baseline-motion5/report.json",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate11-spring-props-motion3/report.json"
+    ],
+    "recording_correction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/spring-props-recorder-season-fix/correction.json",
+    "sessions": null,
+    "archive": "not created; beta10 archive still valid"
+  },
+  "candidate12_progress": {
+    "unit_count": 140,
+    "native_count": 13,
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate12-autumn-props-native/report.json",
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/autumn-props1-transaction.json",
+    "full_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate12autumnreview-full-transaction.stdout",
+    "review": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate12-autumn-review/report.json",
+    "recordings": [
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/autumn-props1-baseline-motion/report.json",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate12-autumn-props-motion2/report.json"
+    ],
+    "sessions": null,
+    "archive": "notcreated; beta10 archives retained"
+  },
+  "candidate13_progress": {
+    "status": "intermediate rejected motion review",
+    "reason": "geometry-only improvement still405/7524heading>90 observations;newbeta14supersedes",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/fish-body1-round1/review.json"
+  },
+  "candidate14_progress": {
+    "unit_count": 148,
+    "native_count": 14,
+    "native": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-fish-body-verification/report.json",
+    "motion": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-fish-body-motion/report.json",
+    "behavior": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-fish-behavior2/report.json",
+    "alarm": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-alarm-native2/report.json",
+    "alarm_checks": 7,
+    "scoped_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/fish-body1-transaction.json",
+    "full_transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14delivery-full-transaction.stdout",
+    "review": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-fish-body-review/report.json",
+    "implementation_rounds": 2,
+    "sessions": null,
+    "archive": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-distribution.json",
+    "suite_session": null,
+    "suite": "evidence/v9/candidate14-suite/report.json",
+    "day_review": "evidence/v9/candidate14-day-review/report.json",
+    "final_unit": "evidence/v9/candidate14-final-regression-unit.stdout",
+    "suite_checks": 68,
+    "tail_session": null,
+    "tail": "evidence/v9/candidate14-suite-tail/report.json",
+    "tail_checks": 23,
+    "motion_final": "evidence/v9/candidate14-motion-final/report.json",
+    "performance_session": null,
+    "performance": "evidence/v9/candidate14-performance/comparison.json",
+    "summary": "evidence/v9/candidate14-regression-summary/report.json",
+    "selected_native_assertions": 105,
+    "comparison": "evidence/v9/candidate14-reference-comparison/report.json",
+    "crab_recheck": "evidence/v9/candidate14-crab-motion-recheck/report.json",
+    "source_files": 806,
+    "extracted_native_report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-archive-native/report.json",
+    "extracted_native_checks": 5,
+    "stall_diagnostics": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/candidate14-stall-diagnostic-summary.json"
+  },
+  "last_verified_delivery": "0.9.0-beta.14",
+  "candidate15_progress": {
+    "status": "built_not_native_verified",
+    "unit_count": 152,
+    "unit": "evidence/v9/osmanthus1-unit.stdout",
+    "native_baseline": "evidence/v9/osmanthus1-baseline-native2/report.json",
+    "build": "evidence/v9/package-0.9.0-beta.15-build.json",
+    "baseline": "transaction/osmanthus1-baseline/manifest.json",
+    "art": "art/osmanthus-01/assets.json",
+    "native_modified": "NOT STARTED",
+    "rollback": "NOT STARTED",
+    "first_native_setup_failure": "evidence/v9/osmanthus1-baseline-native/failure.json;exit1;direct env.apply was superseded by state sync;fixed verifier uses persisted season control sequentially"
+  },
+  "current_spring_sample": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/releases/春池-水光样板02-mac-arm64.app",
+  "current_spring_preview": "http://127.0.0.1:8798/",
+  "preview_entry": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/spring-peach-03/web-preview/serve.py",
+  "preview_evidence": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/water-quality3-browser-verified.json",
+  "art4": {
+    "modified": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/spring-summer-04/source/app/vendor/pond.js",
+    "diff": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/ART4_SUPPLEMENT.patch",
+    "transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/art4-transaction.json",
+    "browser": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/art4-interaction.json",
+    "preview": "http://127.0.0.1:8799/",
+    "aesthetic": "pending user review"
+  },
+  "ink5": {
+    "preview": "http://127.0.0.1:8800/",
+    "modified": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/ink-summer-05/source/app/vendor/pond.js",
+    "supplement_patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/INK5_SUPPLEMENT.patch",
+    "boundaries": [
+      "Art is first ink style slice, pending user review.",
+      "Preview frame rates fluctuate and are low in observed browser; underlying cause not confirmed. Both old and new have slow frame samples; differing quality/scene prevent controlled performance comparison.",
+      "Video contains real captured frames, no generated/inbetween frames. 10.3s capture produced17 composites and8.455s encoded WebM, not smooth30fps.",
+      "Original spring asset unchanged. Generated summer cleanup approximately preserves layout, not pixel-identical stones.",
+      "Runtime WebGL valid; GPU-loss static fallback is not accepted or newly tested.",
+      "ps diagnostic was denied by sandbox (operation not permitted), not retried or counted as app error."
+    ]
+  },
+  "clear6": {
+    "preview": "http://127.0.0.1:8801/",
+    "modified": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/clear-water-06/source/app/scene-water.js",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/CLEAR6_SUPPLEMENT.patch",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/clear6-delivery.json"
+  },
+  "pale7": {
+    "preview": "http://127.0.0.1:8802/?v=7.1",
+    "source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/pale-water-07/source/app/scene-water.js",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/PALE7_SUPPLEMENT.patch",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/pale7-delivery.json"
+  },
+  "flow13": {
+    "preview": "http://127.0.0.1:8809/",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/flow13/browser-verification.json",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/FLOW13_SUPPLEMENT.patch",
+    "modified": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/slow-flow-13/source/app/scene-water.js",
+    "aesthetic": "pending user review"
+  },
+  "reference14": {
+    "preview": "http://127.0.0.1:8810/compare.html",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/reference14/delivery.json",
+    "modified": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/reference-seasons-14/source/app/scene-water.js",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/REFERENCE14_SUPPLEMENT.patch",
+    "preserved": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/slow-flow-13",
+    "server_session": 84271,
+    "aesthetic": "pending user review"
+  },
+  "selected_season_styles": {
+    "spring": "slow-flow-13",
+    "summer": "slow-flow-13",
+    "autumn": "reference-seasons-14"
+  },
+  "bed15": {
+    "preview": "http://127.0.0.1:8812/compare.html",
+    "report": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/bed15/delivery.json",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/BED15_SUPPLEMENT.patch",
+    "modified": [
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/bed-depth-15/source/app/scene-water.js",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/bed-depth-15/source/app/scene-water-ours.js"
+    ],
+    "server_session": 83786,
+    "aesthetic": "detail intensity pending user review"
+  },
+  "occlusion16": {
+    "date": "2026-11-09T15:34:03.500050",
+    "preview": "http://127.0.0.1:8814/summer/",
+    "autumn_preview": "http://127.0.0.1:8814/autumn/",
+    "source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/occlusion-clean-16",
+    "goals": [
+      "summer bedDetail returns original color before added stones/algae/grain",
+      "underwater turtle canvas before fish at same z=1; butterfly remains z=2"
+    ],
+    "unchanged": [
+      "baseline15 all bytes",
+      "spring appearance",
+      "autumn bed optics/branch corner mask and fish logic",
+      "installed app"
+    ],
+    "browser": {
+      "summer_frames_delta": 323,
+      "feed_click": 1,
+      "food_eaten": 1,
+      "summer_detail": "disabled-clean16",
+      "autumn_overlap": "Controlled same koi placed at turtle x+8,y in baseline and modified pages; screenshots show baseline turtle covering head, modified fish above turtle. Test placement/pause discarded by navigation; delivered page live/unpaused.",
+      "boundary": "Verified the left circular turtle layer; not claiming every possible shoreline collision tested."
+    },
+    "images": {
+      "baseline-overlap.png": "19e49e773e57bf83d140093e55096297a010caa046f41cef676a3372aa475100",
+      "modified-overlap.png": "5f07444d8a0d8df4d1a7bb1a2fbd52850e32a1f099382a6975f7439df7bd47b6",
+      "summer-clean16.png": "555e47ed2dc4c92bf88aad9aceeeec84173b811d7977c2b4e6d6e1288fb64978"
+    },
+    "transaction": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/evidence/v9/occlusion16/transaction.json",
+    "patch": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/OCCLUSION16_SUPPLEMENT.patch",
+    "roles": [
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/vendor/pond.js",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/DIFF.patch",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/VERIFICATION.txt",
+      "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/transaction/ROLLBACK.sh"
+    ],
+    "execution_errors": [
+      {
+        "source": "initial node probe relative require",
+        "exit": 1,
+        "error": "MODULE_NOT_FOUND",
+        "correction": "path.resolve absolute application root; rerun exit0"
+      },
+      {
+        "source": "first modification heredoc",
+        "exit": 1,
+        "error": "SyntaxError: Non-UTF-8 code starting with '\\xe4' in file <stdin> on line 14",
+        "correction": "ASCII-only Python source with Unicode escapes; successful write"
+      },
+      {
+        "source": "sandbox local HTTP listen",
+        "exit": 1,
+        "error": "PermissionError: [Errno 1] Operation not permitted",
+        "correction": "Approved local-only server execution; PREVIEW_READY, session69428"
+      }
+    ]
+  },
+  "current_preview": "http://127.0.0.1:8814/summer/",
+  "next_action": "User visual review of clean16 summer and autumn left turtle overlap; no installed app update.",
+  "launch_preparation": {
+    "root": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/launch-prep-20261109",
+    "site": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/launch-prep-20261109/site/dist",
+    "state": "unfinished draft; awaiting name decision after two conflicts",
+    "confirmed_platform": "Mac App Store, not mobile",
+    "name": "unresolved",
+    "next_actions": [
+      "Finish support/privacy/credits pages and local preview",
+      "Run desktop/mobile browser interaction QA",
+      "Write MAS source audit, metadata drafts and release gates",
+      "Do not submit, publish, pay, alter installed app or remove features without approval"
+    ],
+    "evidence": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/launch-prep-20261109/release/name-screening.json"
+  }
+}

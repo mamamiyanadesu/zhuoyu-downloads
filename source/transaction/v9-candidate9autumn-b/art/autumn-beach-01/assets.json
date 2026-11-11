@@ -1,0 +1,14 @@
+{
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/autumn/bed-v1.png",
+  "sha256": "b76a34bb2b632984f34662995fdba157d6364c5d45a1f5d878681f9fd7e5c16f",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-66866220-81b2-4d2c-b893-2bff34fe2061.png",
+  "generator": "built-in image_gen",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "purpose": "original independent autumn beach quartz sand, not summer recoloring",
+  "third_party_reference_package_assets_used": false,
+  "review": "Viewed generated image: bright fine warm sand, irregular warm-grey silt seams at upper left and lower right; no rocks/shore/vegetation. Actual composite pending."
+}

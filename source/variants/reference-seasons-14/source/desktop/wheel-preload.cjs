@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('qingchiWheel',Object.freeze({read:()=>ipcRenderer.invoke('qc:wheel-read'),run:i=>ipcRenderer.invoke('qc:wheel-run',i),cancel:()=>ipcRenderer.send('qc:wheel-cancel'),onState:fn=>ipcRenderer.on('qc:wheel-state',(_e,v)=>fn(v))}));

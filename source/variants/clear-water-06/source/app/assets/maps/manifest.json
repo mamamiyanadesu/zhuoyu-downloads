@@ -1,0 +1,10 @@
+{
+  "author": "Original procedural SVG by task",
+  "source": "art/v8/build_maps.py",
+  "maps": [
+    "lotus",
+    "beach"
+  ],
+  "coordinates": "normalized viewport; identical geometry to habitat-core.js",
+  "no_external_assets": true
+}

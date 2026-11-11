@@ -1,0 +1,16 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/winter/bed-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-d0fbbc51-b367-445c-a0a1-5e85ed913ff2.png",
+  "sha256": "4e3c25d7209ac191669071baed9a477618bbee4a4c86c4d807ca63811a6cfb3d",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "alpha_extrema": null,
+  "prompt": "Create an ORIGINAL 16:9 landscape underwater BED layer for a quiet Chinese garden pond game. WINTER: pale cool grey silty pond bottom, submerged dark slate pebbles and fine empty sand channels, dormant underwater twig fragments near corners, broad dark blue-grey slabs just along lower-left and top-right. Slightly silvery mineral texture, low-contrast central 75% open muted blue-grey sediment. NO snow or ice on the underwater bed! Snow belongs on separate above-water foreground layers; keep this bottom fully unfrozen and visible. Orthographic directly top-down, very fine naturalistic hand-painted material textures, restrained atmospheric realism. DISTINCT organic composition, not a color filter. Diffuse daylight from upper-left, calm low contrast, no focal central object. No fish, animals, floating plants, overhanging branches, surface reflections, water caustics, waves, ripples, tree shadows, UI, text, logo or border. The game adds animated water and life over this asset separately. Fully opaque, full-bleed landscape image.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

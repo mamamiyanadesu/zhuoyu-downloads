@@ -1,0 +1,71 @@
+{
+  "lotus": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-257ffca0-a7c9-4755-8938-74a7306cac0a.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/garden-seasonal/winter/lotus-v1.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      17,
+      1230,
+      1254
+    ],
+    "transparent_pixels": 801525,
+    "near_opaque_pixels_alpha240plus": 740034,
+    "red_fringe_alpha_above20": 0,
+    "sha256": "5ff70a7f7eb50b404ec61d9261b35daf9041782307025c31caadbd4069963935"
+  },
+  "reeds": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-76b4b4ee-d22a-4861-9a77-e3060f732621.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/garden-seasonal/winter/reeds-v1.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      9,
+      1251,
+      1254
+    ],
+    "transparent_pixels": 836316,
+    "near_opaque_pixels_alpha240plus": 301663,
+    "red_fringe_alpha_above20": 0,
+    "sha256": "1336cc13afaf18facd5e3673d2a1fba56f31580da6486af6e2a9749687336e85"
+  },
+  "rock": {
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-45e66ca6-138b-45b5-9995-df14433dbdc1.png",
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/garden-seasonal/winter/rock-v1.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      255
+    ],
+    "bbox": [
+      0,
+      25,
+      1214,
+      1238
+    ],
+    "transparent_pixels": 867171,
+    "near_opaque_pixels_alpha240plus": 683274,
+    "red_fringe_alpha_above20": 0,
+    "sha256": "8706db6e330f7f7086fa5d7acc9d2d1a0204493f27d88b974d95b083d8c6a3c0"
+  }
+}

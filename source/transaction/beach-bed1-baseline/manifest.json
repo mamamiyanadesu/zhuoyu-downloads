@@ -1,0 +1,11 @@
+{
+  "app/scene-manifest.js": "14cd8111b448cd12e24c71713d9ebdb29e974f617ac6cfb76f09f2a4d197fa0d",
+  "app/scene-art.js": "fe740891e16aa15909407742fa0b93c48c9eeba124b20471c46e8fcfd2254f56",
+  "package.json": "b4cfb51eb083bf385bf54d8cacbbefd4e30b7d81e622edc1146b3798e060387b",
+  "package-lock.json": "cc5a74a41d0f015e9451c2a23e82e1ae30f187e3cb781ead946891d98cf54c80",
+  "\u84ec\u83b1\u4e34\u6c340.9\u5019\u9009\u8bf4\u660e.txt": "544792d64c31dc8f722acc467064f002d27d8279c1f07f64e68a89212acf045e",
+  "tests/beach-layout-probe.cjs": "4593723cffee8262a3125d7abae3379e0f4c614a3f76aca730f918d59d812703",
+  "tests/beach-poses-probe.cjs": "0e573dc36c80bad2acf0a867987871160ac5001575749cd121d9be90469cfdc7",
+  "tests/beach-poses.test.cjs": "f8b2ed577d06b2b54f4386e0db468487a5e1a3566a3273fea3b07efdc33a3db1",
+  "THIRD_PARTY.txt": "1a527e9007aed2fff3799df711c19a0d11f624101849a8d7ccf3dfe8ae2369de"
+}

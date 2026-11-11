@@ -1,0 +1,10 @@
+{
+  "operation": "image_gen surgical cleanup of baked water ripple rings and caustics",
+  "source": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/spring-summer-04/source/app/assets/clear-pond-v2.png",
+  "generated_source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-6a94b819-40d9-4127-a6fe-8b1ddd6fe6db.png",
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/variants/ink-summer-05/source/app/assets/clear-pond-clean-v5.png",
+  "sha256": "e4822105235bbcd72ae42a1c8afc126f4b3399a8159521408ed2298dc3639b90",
+  "visual_inspection": "No fixed concentric rings or bright caustic net visible; corner leaves/stone arrangement retained approximately, not pixel-identical. Only isolated preview05 uses generated cleanup.",
+  "user_authorization": "Change fish toward ink style and make summer water and lower-left leaf ripple dynamic.",
+  "scope": "Fish style and summer water only; no autumn/winter, native packaging or global automations."
+}

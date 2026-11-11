@@ -1,0 +1,19 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/spring/foreground-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-23cb69b2-b248-4dc4-acfd-b90ad5625491.png",
+  "sha256": "770ceb4845f9aca85b8ef9485ab97d983bfa0fca8ac957cfba3d658b1be49a42",
+  "size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "prompt": "Create an ORIGINAL game foreground sprite on a fully transparent background. A single gracefully irregular cherry blossom branch viewed directly from ABOVE, branching from lower-left toward upper-right, with delicate small pale pink and white five-petal blossoms, tiny fresh leaves and visible thin dark-brown woody twigs. Airy composition with many fully transparent gaps. Overall asymmetrical triangle shape, all branch and flower tips remain inside frame with 8% clear margin. Botanical naturalism, not a dense pink cloud. Very fine naturalistic hand-painted texture, believable botanical/mineral material, muted elegant color, soft diffuse light from upper-left. Camera orthographic straight top-down, no isometric or side view. Crisp clean alpha, transparent gaps and outside silhouette. No water, pond bed, floor, backdrop, checkerboard, reflections, drop-shadow on a background, animals, UI, text, labels, borders or watermark. The renderer handles cast shadows and subtle animation separately.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

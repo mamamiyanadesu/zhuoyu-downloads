@@ -1,0 +1,16 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/autumn/bed-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-d724c271-8eb1-4dff-942f-a878aeb598c5.png",
+  "sha256": "7598362ba87bb05230edcde0fa98d0cc32b87166eebc0a2553d4aaaa56904ce7",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "alpha_extrema": null,
+  "prompt": "Create an ORIGINAL 16:9 landscape underwater BED layer for a quiet Chinese garden pond game. AUTUMN: warm ochre silt, tiny amber and russet fallen leaves settled into the pond bottom at the margins, a broad irregular grey-green slate rock shelf along the upper-right, a scatter of small smooth ochre stones along bottom-left, sparse brown submerged plant stems. Spacious low-contrast central 75% of muted sand, mossy olive and pale clay. The settled leaves are small, scarce and only at the edges; floating animated leaves will be separate. Orthographic directly top-down, very fine naturalistic hand-painted material textures, restrained atmospheric realism. DISTINCT organic composition, not a color filter. Diffuse daylight from upper-left, calm low contrast, no focal central object. No fish, animals, floating plants, overhanging branches, surface reflections, water caustics, waves, ripples, tree shadows, UI, text, logo or border. The game adds animated water and life over this asset separately. Fully opaque, full-bleed landscape image.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

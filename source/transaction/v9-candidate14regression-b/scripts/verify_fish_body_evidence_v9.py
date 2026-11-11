@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,hashlib,math
+r=Path(__file__).resolve().parent.parent;e=r/'evidence/v9';out=e/'candidate14-fish-body-verification';out.mkdir(exist_ok=True);sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+b=json.load(open(e/'fish-body1-baseline-motion/report.json'));m=json.load(open(e/'candidate14-fish-body-motion/report.json'));analysis=json.load(open(e/'candidate14-fish-body-motion/body-analysis.json'));base_analysis=json.load(open(e/'fish-body1-baseline-motion/body-analysis.json'));checks=[]
+def mark(name,data=None):checks.append({'name':name,'passed':True,'data':data});print('PASS',name)
+assert b['result']==m['result']=='PASS';assert m['encodedFrames']>500 and m['duration']>=20;assert all(c['state']['quiet'] and c['state']['scene']=='autumn'for c in m['checkpoints']);assert m['events'][0]['click']['trusted'];mark('actual-packaged20s-motion-feed-and-quiet-checkpoints',{'duration':m['duration'],'frames':m['encodedFrames']})
+assert analysis['samples']>7000;assert analysis['stats']['maxJoint']['max']<=.156;assert analysis['stats']['extension']['min']>.9;mark('sampled-native-spines-never-fold',{'samples':analysis['samples'],'jointMax':analysis['stats']['maxJoint']['max'],'minExtension':analysis['stats']['extension']['min']})
+assert abs(analysis['stats']['minSpacing']['min']-4.34)<1e-9 and abs(analysis['stats']['maxSpacing']['max']-4.34)<1e-9;mark('sampled-native-spine-spacing-preserved')
+assert analysis['heading_over90']==0;assert analysis['stats']['headingError']['p95']<.5;mark('sampled-native-heading-alignment-no-backwards-pose',{'p95Radians':analysis['stats']['headingError']['p95'],'over90':0})
+for n in ['candidate14-fish-behavior2','candidate14-alarm-native2']:
+ d=json.load(open(e/n/'report.json'));assert d['result']=='PASS';assert all(c['passed']for c in d['checks']);checks.extend(d['checks'])
+for version in ['0.9.0-beta.12','0.9.0-beta.13','0.9.0-beta.14']:
+ build=json.load(open(e/f'package-{version}-build.json'));p=Path(build['app'])/'Contents/Resources/app';assert all(sha(p/n)==h for n,h in build['packagedFiles'].items())
+assert all(sha(r/n)==h for n,h in build['packagedFiles'].items()if n.startswith(('app/','desktop/')))
+result={'result':'PASS','scope':'targeted native fish spine/heading/feeding/pause/alarm verification; not whole product acceptance','executable':m['executable'],'checks':checks,'baseline_analysis':base_analysis,'modified_analysis':analysis,'motion':m,'baseline_motion':b,'iterations':2,'rejected_intermediate':'beta13 geometry passed but backwards heading sampled405/7524, source and package preserved','native_sample_method':'approx20Hz read-only positions, not every render frame; velocityYawRate derived from asynchronous wall samples is an alias-sensitive diagnostic, not actual render yaw bound','unit_count':148,'old_beta12_and13_payloads_unchanged':True,'beta14_payload_matches_source':True,'not_verified':['full packaged regression','full performance comparison','physical sleep/fullscreen/multidisplay/global shortcut','full reference-video comparison and subjective art approval']}
+(out/'report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print('FISH_BODY_NATIVE_EVIDENCE_PASS',len(checks))

@@ -1,0 +1,13 @@
+{
+  "authoring": "Original Blender geometry and renders; no external art",
+  "blender": "5.2.3 LTS",
+  "items": [
+    "rock",
+    "turtle",
+    "dragonfly",
+    "lotus",
+    "reeds",
+    "lantern"
+  ],
+  "sprite_size": 768
+}

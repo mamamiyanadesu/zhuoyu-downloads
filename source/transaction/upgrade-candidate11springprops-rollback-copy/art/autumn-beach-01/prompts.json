@@ -1,0 +1,9 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Create one NEW ORIGINAL opaque 16:9 orthographic top-down ground texture for the AUTUMN shallow sandy shore of a calm Chinese garden pond game. Reference image 1 (our own summer beach) is ONLY the material quality and small-scale painted detail standard. Reference image 2 (our own autumn pond) is ONLY a muted mineral palette guide, NOT its rock frame/composition. This must be a different substrate composition, NOT a color-shifted summer texture. Fine pale warm quartz sand with soft warm-grey silt islands and extremely sparse tiny ochre/grey mineral grains, uneven diagonal deposition seams concentrated delicately near the upper left and lower right. Make the center 75 percent broad, low-contrast and uncluttered so moving fish remain legible after water is composited. Brighter and cleaner than the existing muddy ochre pond, warm autumn afternoon material but neutral soft upper-left light. Delicate naturalistic hand-painted texture at fine grain scale; continuous sand through all four edges. No medium or large stones, no boulders, rock frame, roots, branches, leaves, flowers, grass, animals, fish, shells, water, ripples, caustics, foam, shoreline, horizon, perspective, cast tree shadows, text, UI, border or watermark. These are all separate runtime layers. Not repeated parallel ridges or a mechanical pattern. Output fully opaque PNG, original layout of silt and sand distinct from both reference images.",
+  "references": [
+    "app/assets/scenes/beach/summer/bed-v1.png",
+    "app/assets/scenes/autumn/bed-v1.png"
+  ],
+  "reference_role": "Only own project fine-material standard and palette; no reference-package assets"
+}

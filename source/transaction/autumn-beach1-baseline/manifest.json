@@ -1,0 +1,11 @@
+{
+  "app/scene-manifest.js": "21eaa63ed63833b8b1dbd8c04551e1ab1f3164633d54a6d971ad28c131c5a011",
+  "app/scene-art.js": "54137155d218653e3aff85bd37cd8961fb0c0fbf64f40e59a0e8b20d649a6916",
+  "app/clear-sample-core.js": "bc4b31671b4e291e53ac1dce76d81b78b348617d7bbc5e5a7c16b3b5a46538a0",
+  "tests/beach-bed.test.cjs": "76fceda3648c80f594a4ea44f8bc93b14ac3f1bdb9af65d3fe83c693ec39a6ed",
+  "tests/scene-seasons.test.cjs": "0c7e54a9068a44d600052f119bfdeced8cfef590d0367e7d654e52cbb32b8375",
+  "package.json": "19647985c125dd304f32a6a1e87a39403507e14a3a748c97b515cdd421fdeaa5",
+  "package-lock.json": "19da40a2dc856c28e3c9b3df6812fe3e7620e78fb8e0f04d96da5b68cf14378d",
+  "THIRD_PARTY.txt": "e54e81adb80ae6398c3459aafe216033bdd2b6632ecc51251bf989055446b93a",
+  "\u84ec\u83b1\u4e34\u6c340.9\u5019\u9009\u8bf4\u660e.txt": "34fbe5cef00135ac73c0b3d00da52fe9b8e17ea8c78ad0e485d9e322c6b69bd5"
+}

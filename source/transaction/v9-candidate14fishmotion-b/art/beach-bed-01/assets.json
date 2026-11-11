@@ -1,0 +1,16 @@
+{
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/summer/bed-v1.png",
+  "sha256": "b16ddb723a1ea9f9e9966747b51e741f06e5796a61cd0cf3efc48174123f73d3",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-dbfd8057-ff59-4059-9ac7-99ba696be2cf.png",
+  "generator": "built-in image_gen",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "purpose": "original continuous summer beach sand substrate; dynamic water/shore/props kept separate",
+  "reference": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/summer/bed-v1.png",
+  "reference_sha256": "375e9167ff2b0c6bb65825ec96fc124a23feed9e84e3394178993ec6a31c1994",
+  "third_party_reference_package_assets_used": false,
+  "review": "Viewed output: warm fine-grain continuous sand, subtle irregular rills; no rocks, waterline, animals, plants or baked caustics. Needs native compositing review; not accepted just by generation."
+}

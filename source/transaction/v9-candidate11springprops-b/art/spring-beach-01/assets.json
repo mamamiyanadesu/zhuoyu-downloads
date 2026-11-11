@@ -1,0 +1,18 @@
+{
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/spring/bed-v1.png",
+  "sha256": "8c1b846f540dd0ca60662acda8bc0cbab4969047c29fdfc5b3d94151299b82e7",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-7211cc57-2afa-4ae0-ac05-302bb9883921.png",
+  "generator": "built-in image_gen",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "purpose": "original independent spring beach mineral sand bed, not summer recoloring",
+  "third_party_reference_package_assets_used": false,
+  "references": [
+    "app/assets/scenes/beach/summer/bed-v1.png",
+    "app/assets/scenes/spring/bed-v1.png"
+  ],
+  "review": "Viewed generated image: pale ivory mineral sand, sparse tiny grit, irregular deposition sweeps and subtle pale mineral patches; no boulders/waterline/vegetation. Native integration pending."
+}

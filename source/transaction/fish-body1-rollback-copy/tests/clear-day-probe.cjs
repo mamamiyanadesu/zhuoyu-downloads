@@ -1,0 +1,3 @@
+'use strict';
+const vm=require('node:vm'),fs=require('node:fs');
+const enabled=process.argv[3]!=='off';const ctx={setTransform(){}};const document={body:{dataset:{}},getElementById:()=>({getContext:()=>ctx})};const window={QingchiClearSample:{enabled},QingchiScene:{setLight(){},select(){}}};const scope={window,document,innerWidth:1280,innerHeight:788,devicePixelRatio:1,addEventListener(){},setInterval(){},Date,Math};vm.runInNewContext(fs.readFileSync(process.argv[2],'utf8'),scope);window.QingchiEnvironment.apply({season:'summer',light:'night',weather:'clear'});console.log(JSON.stringify({input:'summer/night/clear',sample:enabled,rendered:window.QingchiEnvironment.inspect().light,body:document.body.dataset.light}));

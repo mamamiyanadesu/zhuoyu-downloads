@@ -1,0 +1,104 @@
+[
+  {
+    "id": "goldfish",
+    "name": "金鱼",
+    "scientific": "Carassius auratus",
+    "color": "#e99b45",
+    "accent": "#fff1c5",
+    "price": 28,
+    "rarity": "常见",
+    "weight": 32,
+    "form": "round",
+    "fin": 1.25,
+    "tail": 1.4,
+    "range": [
+      6,
+      18
+    ]
+  },
+  {
+    "id": "guppy",
+    "name": "孔雀鱼",
+    "scientific": "Poecilia reticulata",
+    "color": "#79b9cd",
+    "accent": "#f09755",
+    "price": 32,
+    "rarity": "常见",
+    "weight": 30,
+    "form": "slim",
+    "fin": 1.2,
+    "tail": 1.5,
+    "range": [
+      2.5,
+      5
+    ]
+  },
+  {
+    "id": "neon",
+    "name": "霓虹灯鱼",
+    "scientific": "Paracheirodon innesi",
+    "color": "#42bfda",
+    "accent": "#e35356",
+    "price": 40,
+    "rarity": "少见",
+    "weight": 23,
+    "form": "slim",
+    "fin": 0.7,
+    "tail": 0.8,
+    "range": [
+      2,
+      3.5
+    ]
+  },
+  {
+    "id": "zebra",
+    "name": "斑马鱼",
+    "scientific": "Danio rerio",
+    "color": "#779ab5",
+    "accent": "#f2d999",
+    "price": 24,
+    "rarity": "常见",
+    "weight": 30,
+    "form": "slim",
+    "fin": 0.8,
+    "tail": 0.9,
+    "range": [
+      3,
+      5
+    ]
+  },
+  {
+    "id": "betta",
+    "name": "暹罗斗鱼",
+    "scientific": "Betta splendens",
+    "color": "#496ec9",
+    "accent": "#bf577d",
+    "price": 65,
+    "rarity": "稀有",
+    "weight": 16,
+    "form": "koi",
+    "fin": 1.5,
+    "tail": 1.5,
+    "range": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "angelfish",
+    "name": "神仙鱼",
+    "scientific": "Pterophyllum scalare",
+    "color": "#d4d9cb",
+    "accent": "#48596b",
+    "price": 78,
+    "rarity": "稀有",
+    "weight": 12,
+    "form": "round",
+    "fin": 1.5,
+    "tail": 1,
+    "range": [
+      6,
+      12
+    ]
+  }
+]

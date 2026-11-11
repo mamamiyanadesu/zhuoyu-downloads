@@ -1,0 +1,19 @@
+{
+  "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/winter/foreground-v1.png",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-5f311f5c-cc33-4551-9a71-f350cd46df36.png",
+  "sha256": "145f46a69307979a382ed66f1957fd5917f17ddf1ca0752456e2e393b03699bd",
+  "size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "prompt": "Create an ORIGINAL game foreground sprite on a fully transparent background. An irregular small WINTER shoreline foreground cluster viewed directly from ABOVE: three overlapping rough dark slate-grey rocks and a few sparse dormant reed stems, capped by localized soft white snow, snow forms natural lumpy edges with tiny granular texture. Some bare dark stone is visible underneath. This asset sits ABOVE pond water at the edge, and must not contain water. Compact diagonal composition from lower-left to upper-right, completely contained with 10% clear padding. Not an entire background, no rectangular ground tile. Very fine naturalistic hand-painted texture, believable botanical/mineral material, muted elegant color, soft diffuse light from upper-left. Camera orthographic straight top-down, no isometric or side view. Crisp clean alpha, transparent gaps and outside silhouette. No water, pond bed, floor, backdrop, checkerboard, reflections, drop-shadow on a background, animals, UI, text, labels, borders or watermark. The renderer handles cast shadows and subtle animation separately.",
+  "generator": "built-in image_gen",
+  "original_for_task": true,
+  "reference_package_assets_copied": false,
+  "review": "generated output visually viewed; alpha/compositing needs native check"
+}

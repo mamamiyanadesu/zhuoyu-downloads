@@ -1,0 +1,7 @@
+{
+  "desktop/preload.cjs": "d81041ad9351fa0cacfc8a0c723f7d9c0a3d6c7ee84977fb228f527027958700",
+  "desktop/main.cjs": "a2dc9dc946a70cac25834c2b1558893b6d033690e44a601d2c2c6af84725ba0a",
+  "desktop/verify-regression-v9.cjs": "affe5d21d715d6173fc43705f7a96d8bc9b5d146a65dce740f2323e86e27dc28",
+  "package.json": "30a0efaba925a16c7b6fc0b4a3f3eab28f2d1ebf332e8405a388e87343a50af7",
+  "package-lock.json": "7e93f4ac76ff8e3b1cf5077311b211adaf64e941549048cf279bbd2e9bc745ec"
+}

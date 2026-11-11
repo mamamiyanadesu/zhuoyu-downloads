@@ -1,0 +1,9 @@
+{
+  "generator": "built-in image_gen",
+  "prompt": "Generate one NEW ORIGINAL opaque 16:9 orthographic top-down WINTER sandy pond-bed texture, not a completed scene. Reference1 is our summer beach only for finely painted material fidelity and detail scale. Reference2 is our winter pond only for cool neutral mineral palette, not its rocks or arrangement. Build a DIFFERENT composition of pale warm-grey washed quartz sand, sparse very fine slate-grey and taupe mineral grains, gently irregular low-relief sediment tongues and whisper-soft deposition arcs near the lower left and upper right. Clear open low-contrast center, natural subtle uneven distribution, no repeated parallel ridges. Cool bright diffuse winter daylight from upper left, not blue/teal color cast and not dark muddy ground. Keep material more neutral than reference2 because animated blue water is a separate runtime layer. Continuous fine sand across all edges, very small grains, no hard relief. No large/medium rocks, rock frame, pebbles larger than tiny grains, roots, vegetation, leaves, branches, animals, shells, fish, water surface, ripples, caustics, foam, shoreline, ice, snow, tree shadows, horizon, perspective, text, border, UI or watermark. Snow-covered rocks and shore vegetation are separate transparent foreground layers already in the game, so do NOT bake snow into underwater sand. Delicate naturalistic hand-painted realism, quiet legible space, fully opaque PNG. Original distribution and sediment shapes distinct from reference1, not a recolor.",
+  "references": [
+    "app/assets/scenes/beach/summer/bed-v1.png",
+    "app/assets/scenes/winter/bed-v1.png"
+  ],
+  "reference_role": "Own material quality and winter palette only; no external package art"
+}

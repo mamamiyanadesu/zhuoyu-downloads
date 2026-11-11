@@ -1,0 +1,18 @@
+{
+  "authoring": "Original Blender geometry and renders; no external art",
+  "blender": "5.2.3 LTS",
+  "items": [
+    "rock",
+    "turtle",
+    "dragonfly",
+    "lotus",
+    "reeds",
+    "lantern",
+    "frog",
+    "butterfly",
+    "egret",
+    "crab"
+  ],
+  "sprite_size": 768,
+  "additional_original_source": "art/v8/build_animals.py"
+}

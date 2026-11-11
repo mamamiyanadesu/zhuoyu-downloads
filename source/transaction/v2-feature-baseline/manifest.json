@@ -1,0 +1,20 @@
+{
+  "DIFF.patch": "d0c3948d9bda7bcbe20946a5fedb1a9a855128e82e7bd7a8e169d77ddfcb5ba8",
+  "VERIFICATION.txt": "39a00e098a3110866f28fc2359eb1e82919e65468be504ead69c16d78cf6e7d3",
+  "package-lock.json": "ea6c9b6359a810b2444aeab20bae686d4dfc9c9e714cfd6484a6570977cde680",
+  "package.json": "6b768de0562d7937058e86faaefb40b6ca68880c10006718a8509006ec1bd6af",
+  "ROLLBACK.sh": "2db597790675659780f6c1f7ab683d52d2e45199109a55475c0a8228a4677e2f",
+  "app/index.html": "3241ac26b320456da92d438aaab7bbe1e04d3b81a277cb457af24f67e1698dfe",
+  "app/core.js": "7c74e881f451f33ab0e3bb730ca4cbd3b8dfbd8fc183f733cd869e3e2cde62cc",
+  "app/icon.svg": "3d9308bc82adecc7efbcab0afb074765c1c3c3b4f41b7ba66ca7c4315fc63d29",
+  "app/style.css": "d5a52e25c6bb4a469b74ee4d0d837f1ba4edf2b2eff2ccda193023e3ad88c973",
+  "app/app.js": "4486c32a10f238a5a40e6b8ad5973bf79aab27c8af539661bdd24e9a12fec35a",
+  "app/assets/clear-pond-v2.png": "80b7557a9f25aeac4efe8d3b1851954af7a76a63b7f4a9556993d18dc9526b66",
+  "app/assets/Qingchi.icns": "f1af1531d1a23e247b526b1b602ba2d09c02d23f22d09ab01df4c6d91fb47187",
+  "app/assets/leaf-occlusion.svg": "f8389a79b30fde982f6cc5af9f3e1c1d56cffd7dd7a05cb4bb83891864a7ea5a",
+  "app/vendor/pond.js": "90515782be2466c489341b75754a982dae23097dc2a3a709a12a636524453a37",
+  "app/vendor/LICENSE-koi.txt": "925e46045d334fa9f933bc725ec7912a9e26ea3b0e0e38ae002475a9c2b3d6c4",
+  "app/vendor/pond.original.js": "62571acded09327c27215518a5fe5accc683faee448485362354c2fc966dd2e7",
+  "desktop/preload.cjs": "d4118c497bd6a0819ab98a53c91b19240fc82368933a177bc3a71ba70b4f3dc3",
+  "desktop/main.cjs": "81f319e838145931b9f87c86d60ff32fba3cd48b2ef9330bf735bbda1d28ed35"
+}

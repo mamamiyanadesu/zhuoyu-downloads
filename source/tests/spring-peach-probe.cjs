@@ -1,0 +1,2 @@
+const path=require('node:path'),M=require(path.resolve(process.argv[2],'app/scene-manifest.js'));
+console.log(JSON.stringify({input:'clear+spring;1280x720;sourcecorner(.88,.10);center(.5,.5)',bed:M.mapPlan('clear','spring').bed,foregroundStamps:M.poses('spring',1280,720,2/3,0,'clear').length,solidCornerRegions:M.rocksFor('clear','spring').length,upperRightSolid:M.rockAt('spring',.88,.1,'clear'),centerSolid:M.rockAt('spring',.5,.5,'clear')}));

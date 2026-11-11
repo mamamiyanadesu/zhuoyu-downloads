@@ -1,0 +1,1 @@
+'use strict';const path=require('node:path'),C=require(path.resolve(process.argv[2]));const points=[[.15,.20],[.5,.5],[0,0]];console.log(JSON.stringify({input:{map:'lotus',points},water:points.map(([x,y])=>C.waterAt('lotus',x,y)),outlineVertices:C.waterOutline?C.waterOutline('lotus').length:null}));

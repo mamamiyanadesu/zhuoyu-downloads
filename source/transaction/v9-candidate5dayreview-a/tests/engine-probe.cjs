@@ -1,0 +1,16 @@
+const fs = require('node:fs');
+const vm = require('node:vm');
+const file = process.argv[2];
+const handlers = {};
+const ctx = new Proxy({}, {get: () => () => {}, set: () => true});
+const canvas = {width:0,height:0,getContext:()=>ctx};
+const window = {innerWidth:1280,innerHeight:800,devicePixelRatio:1,addEventListener:(n,f)=>{(handlers[n]??=[]).push(f)}};
+const document = {hidden:false,getElementById:()=>canvas,body:{style:{}},addEventListener:()=>{}};
+const sandbox = vm.createContext({window,document,performance:{now:()=>0},requestAnimationFrame:()=>{},console,Math});
+vm.runInContext(fs.readFileSync(file,'utf8'),sandbox);
+const widget = {closest:()=>({})}; const water = {closest:()=>null};
+for (const fn of handlers.click) fn({clientX:100,clientY:100,target:widget});
+const uiFood = vm.runInContext('foods.length',sandbox);
+for (const fn of handlers.click) fn({clientX:500,clientY:300,target:water});
+const waterFood = vm.runInContext('foods.length',sandbox);
+console.log(JSON.stringify({input:'widget-click then water-click',foodAfterWidget:uiFood,foodAfterWater:waterFood,fish:vm.runInContext('kois.length',sandbox)}));

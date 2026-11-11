@@ -1,0 +1,42 @@
+{
+  "lotus": {
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/garden-seasonal/spring/lotus-v1.png",
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-2b27a145-10d3-4930-8ea3-6aff1cec8eee.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "3c9658f133f7115829ca0bf320a4bdb7ed0c5cb63bc991bbf959643e642b02c0",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_gt32_bbox": [
+      162,
+      169,
+      1067,
+      1072
+    ]
+  },
+  "reeds": {
+    "path": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/garden-seasonal/spring/reeds-v1.png",
+    "source": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-2492b18b-0f2b-48e5-a420-f807fe96c936.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "sha256": "20944e82190f223e22f3e6c9fe6f3ada693fd520a59a4bc7978a4d8170f0425c",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_gt32_bbox": [
+      117,
+      154,
+      1130,
+      1133
+    ]
+  }
+}

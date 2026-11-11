@@ -1,0 +1,651 @@
+[
+  {
+    "old": "去蓬莱钓鱼",
+    "new": "去钓鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "出发去蓬莱 ↗",
+    "new": "去钓鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "画一尾新鱼",
+    "new": "画条鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "画一尾鱼",
+    "new": "画条鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "池畔工作台",
+    "new": "日常工具",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "手笺",
+    "new": "笔记",
+    "files": [
+      "app/index.html",
+      "app/app.js",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "吃食榜",
+    "new": "吃食排行",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "四季天气",
+    "new": "天气",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "鱼篓与图鉴",
+    "new": "我的收获",
+    "files": [
+      "app/expedition.html",
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "岛屿收集手册",
+    "new": "我的收获",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "打捞册",
+    "new": "水边收藏",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "备份与设置 ↗",
+    "new": "备份设置",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "鱼池与数据",
+    "new": "设置",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "池塘生活",
+    "new": "养鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "收起组件",
+    "new": "隐藏面板",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "清池 · 展开组件",
+    "new": "显示面板",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "暂停鱼池",
+    "new": "暂停游动",
+    "files": [
+      "app/index.html",
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "继续鱼池",
+    "new": "继续游动",
+    "files": [
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "随手记一笔",
+    "new": "随手记",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "今天的小事",
+    "new": "今日待办",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "查看全部日期",
+    "new": "全部待办",
+    "files": [
+      "app/index.html",
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "只看今天",
+    "new": "今日待办",
+    "files": [
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "留一刻给自己",
+    "new": "专注计时",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "提醒分钟",
+    "new": "提醒间隔",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "确认后循环",
+    "new": "重复提醒",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "自定义提醒",
+    "new": "定时提醒",
+    "files": [
+      "app/index.html",
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "测试到时提醒（3 秒）",
+    "new": "测试提醒",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "保存并放入池塘",
+    "new": "保存入池",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "新建草稿",
+    "new": "重新画鱼",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "清空笔画",
+    "new": "清空花纹",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "从鱼苗开始养",
+    "new": "从小养起",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "刷新榜单",
+    "new": "刷新排行",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "放入池塘",
+    "new": "放入鱼池",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "移出池塘",
+    "new": "移出鱼池",
+    "files": [
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "动画帧率上限",
+    "new": "流畅程度",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "动态水光",
+    "new": "水面光影",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "互动模式",
+    "new": "水面点击",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "点击投喂",
+    "new": "点击喂鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "只看鱼 · 不投喂",
+    "new": "仅供观赏",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "导出备份",
+    "new": "保存备份",
+    "files": [
+      "app/index.html",
+      "app/app.js"
+    ]
+  },
+  {
+    "old": "恢复上一版自动备份",
+    "new": "恢复上次",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "开启桌面观赏（实验）",
+    "new": "桌面鱼池",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "关闭桌面观赏",
+    "new": "关闭鱼池",
+    "files": [
+      "app/life-ui.js",
+      "desktop/native.cjs"
+    ]
+  },
+  {
+    "old": "跟随本机时间",
+    "new": "跟随时间",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "白昼",
+    "new": "白天",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "暮色</option>",
+    "new": "傍晚</option>",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "清夜",
+    "new": "夜晚",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "手动天气",
+    "new": "画面天气",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "启用 / 刷新当地天气",
+    "new": "更新天气",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "停用联网天气",
+    "new": "停止更新",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "停用联网",
+    "new": "停止更新",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "收起面板，看水面",
+    "new": "查看效果",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "让当地天气，走进仙山",
+    "new": "城市天气",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "启用杭州临平天气",
+    "new": "更新天气",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "← 清池",
+    "new": "返回鱼池",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "按住蓄力 · 抛竿",
+    "new": "蓄力抛竿",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "选择钓点后出发",
+    "new": "选择钓点",
+    "files": [
+      "app/expedition.html",
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "等鱼咬钩…",
+    "new": "等待咬钩",
+    "files": [
+      "app/life-ui.js",
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "按空格 · 命中绿区",
+    "new": "提竿",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "连按 / 长按 · 收线",
+    "new": "收线",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "再抛一竿",
+    "new": "再钓一次",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "收好鱼，再出发",
+    "new": "已钓到鱼",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "换上这支",
+    "new": "换上鱼竿",
+    "files": [
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "使用中",
+    "new": "已装备",
+    "files": [
+      "app/life-ui.js",
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "购买鱼饵",
+    "new": "买鱼饵",
+    "files": [
+      "app/life-ui.js",
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "绿色容错区",
+    "new": "提竿范围",
+    "files": [
+      "app/index.html",
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "稀有色系权重提高",
+    "new": "更容易遇到稀有鱼",
+    "files": [
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "小店",
+    "new": "渔具店",
+    "files": [
+      "app/index.html",
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "打开清池工具",
+    "new": "打开清池",
+    "files": [
+      "desktop/native.cjs"
+    ]
+  },
+  {
+    "old": "关闭 ×",
+    "new": "关闭",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "数据只留在你这里",
+    "new": "数据保存",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "桌面与存档",
+    "new": "桌面鱼池",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "来源与许可",
+    "new": "关于应用",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "查看完整鱼池 MIT 许可",
+    "new": "使用许可",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "今天，谁吃得最香？",
+    "new": "吃食排行",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "杭州临平 · 真实当地天气",
+    "new": "城市天气",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "让水面，跟着心情变化。",
+    "new": "画面天气",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "把这一刻，交给鱼漂。",
+    "new": "开始钓鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "按住拉线 · 松手放线",
+    "new": "收线",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "把喜欢的，留在池塘。",
+    "new": "钓到的鱼",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "池边的渔具店",
+    "new": "渔具店",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "水边拾来的小事",
+    "new": "水边收藏",
+    "files": [
+      "app/index.html"
+    ]
+  },
+  {
+    "old": "查看收藏奖励",
+    "new": "收藏奖励",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "带回我的鱼池",
+    "new": "带回鱼池",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "留在鱼篓，继续钓",
+    "new": "继续钓鱼",
+    "files": [
+      "app/expedition.html"
+    ]
+  },
+  {
+    "old": "一小包鱼饵",
+    "new": "一包鱼饵",
+    "files": [
+      "app/life-ui.js"
+    ]
+  },
+  {
+    "old": "领取收藏奖励",
+    "new": "领取奖励",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "已写入我的收获。带回清池，或继续寻鱼。",
+    "new": "已保存，可带回鱼池或继续钓鱼。",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "稀有鱼权重提高",
+    "new": "更容易遇到稀有鱼",
+    "files": [
+      "app/expedition.js"
+    ]
+  },
+  {
+    "old": "一小包鱼饵",
+    "new": "一包鱼饵",
+    "files": [
+      "app/expedition.js"
+    ]
+  }
+]

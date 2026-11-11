@@ -1,0 +1,10 @@
+{
+  "app/scene-manifest.js": "d2171c1de9d13ab0300004fc7adaf7b3e5903d6b793eecb8964b6011ed75ac94",
+  "app/scene-art.js": "54137155d218653e3aff85bd37cd8961fb0c0fbf64f40e59a0e8b20d649a6916",
+  "app/scene-water.js": "a468e933f3845b5cfc1941ba91977f681c1a430287371c95a7e1a1c4f6af4d12",
+  "app/scene-bridge.js": "14cd060189b393bc039306bcc53dd9ec20b1cde597953592c49703b59ec81a82",
+  "app/vendor/pond.js": "4cf0049dbf0348539bad6ae60af048a313b246bcee8491ebfdb164664ed8bdc7",
+  "app/scene-integrated.css": "e97cfd428682820c0b6c1271ed7b4399a3d98c34a93be6a7c14e43a3d34aafc5",
+  "desktop/main.cjs": "7eee856dd7aec351ca91dc8684c7907706b37260f16348bee2431bb3b732478b",
+  "package.json": "fa36364631cd19a3e59d0476bd6bf1013414ac9d70534c26615ede33a6e6bac2"
+}

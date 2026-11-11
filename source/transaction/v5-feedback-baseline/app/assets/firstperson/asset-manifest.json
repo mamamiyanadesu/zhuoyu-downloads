@@ -1,0 +1,66 @@
+{
+  "blender": "5.2.3 LTS",
+  "authoring": "Original task-authored procedural sculpt/mesh assets; not imported marketplace art",
+  "files": {
+    "rod-hand.glb": 133520,
+    "fish-koi.glb": 246008,
+    "fish-round.glb": 246048,
+    "fish-long.glb": 246024,
+    "shore.glb": 6996620,
+    "fish-slim.glb": 246020
+  },
+  "scene_objects": 42,
+  "mesh_vertices": 248786,
+  "cards": {
+    "fish-card-crucian.png": {
+      "bytes": 137125,
+      "sha256": "9e67bffabd99a5ca52edce230d186b61b765872c11c40468ec5bc6b99a9a928d"
+    },
+    "fish-card-perch.png": {
+      "bytes": 119405,
+      "sha256": "3aba4b92758b083cb80df03d43132f40ae36b360a02da958ad00dabf97b2dfd7"
+    },
+    "fish-card-carp.png": {
+      "bytes": 132014,
+      "sha256": "e4fe4487541f12756ce17320cd6f3bdd2dbb5b55f98b5a8ac7179f3ad56dda2c"
+    },
+    "fish-card-ink.png": {
+      "bytes": 125358,
+      "sha256": "67bf7988fb59d23f2624418448301ddf1f09c87d4c80e44432a0409804f86fc5"
+    },
+    "fish-card-reed.png": {
+      "bytes": 125319,
+      "sha256": "5f09df0eda678c17a445074808e14fc323439a972575ee5d31037f889fb59c5d"
+    },
+    "fish-card-eel.png": {
+      "bytes": 109248,
+      "sha256": "82d3940d4f4898dd9bc412b9f783f90e37ccda5aa1f3773eca9125b4d50f1dff"
+    },
+    "fish-card-dawn.png": {
+      "bytes": 126204,
+      "sha256": "6b41a3d41f36e6a2d110c3fec5cd4ac3f47522ba467278257cb255272e04f8c6"
+    },
+    "fish-card-ivory.png": {
+      "bytes": 124823,
+      "sha256": "ab0fdd8843ac0ba6ab5a01656f178d5ee3ef0af63cff85b81a891e090b446ef7"
+    },
+    "fish-card-catfish.png": {
+      "bytes": 109940,
+      "sha256": "8f3ef80a08da52284f1170a2654e5fe7896287ab81704ecba8deab8f9c0b8ec7"
+    },
+    "fish-card-gold.png": {
+      "bytes": 127040,
+      "sha256": "88b66a0631044fb811a2ac4554aec04fe330fd051ff6cce40e3e8cced97b777b"
+    },
+    "fish-card-mandarin.png": {
+      "bytes": 141059,
+      "sha256": "2c94716a3d364e091643f668b093ec61f39525e093dc1a126b3fa0c262185a19"
+    },
+    "fish-card-sand.png": {
+      "bytes": 127548,
+      "sha256": "582ce2bb428012d5f454f7239e5591b422889e12b414f04695ddfc30ef6884d8"
+    }
+  },
+  "source_blend": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/art/v5/penglai-nearshore.blend",
+  "body_topology": "4 authored fish morphology templates, 12 rendered colorways; stylized, not biological fidelity"
+}

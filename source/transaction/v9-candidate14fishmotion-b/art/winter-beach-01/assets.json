@@ -1,0 +1,14 @@
+{
+  "asset": "/Users/mac/Documents/Codex/learn/qingchi-desktop-20261106/app/assets/scenes/beach/winter/bed-v1.png",
+  "sha256": "3e45aa5cf8634cf4c4cb3a463649c9903d7cfab309e7325b109793c215ed42bf",
+  "source_output": "/Users/mac/.codex/generated_images/01a1aebb-1865-7633-9309-074b603925d0/exec-7f50c31c-6d19-4252-973d-9570f1843611.png",
+  "generator": "built-in image_gen",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "purpose": "original independent neutral winter beach mineral sand; snow remains separate foreground",
+  "third_party_reference_package_assets_used": false,
+  "review": "Viewed generated image: fine pale neutral-grey sand with soft low-relief deposition arcs. No painted boulders/shore/snow. Native composite pending."
+}

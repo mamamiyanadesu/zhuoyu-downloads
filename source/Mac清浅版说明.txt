@@ -1,0 +1,27 @@
+清池 · 清浅 0.2 — Mac Apple Silicon 本机测试版
+
+打开 releases/清池-0.2.0-mac-arm64.app 即可，不需要安装 Node 或 npm。
+只验证了当前 Apple Silicon Mac；未验证 Intel Mac、其他系统版本与异机首次启动。
+本包使用 ad-hoc 本地签名，没有 Developer ID 签名或 Apple 公证，不能当作正式发行版。
+不要为此关闭系统安全功能。若外部传输后被 Gatekeeper 拦截，保留提示并后续走正规签名/公证。
+
+本轮画面：新生成的 1536×1024 清浅池底、卵石和荷叶素材；柔和锦鲤配色、连续鱼身、半透明鱼鳍、细碎动态水光；浅色组件和清池图标。
+池底与荷叶是静态环境图，鱼、投喂涟漪和细碎水光实时绘制；荷叶使用近似形状遮挡，不是三维水体模拟。没有使用商业安装包中的图像素材。
+设置“动态水光”只开关额外动态光点，背景图本身的静态折射纹理保留。
+
+手笺、待办、专注计时、暂停鱼池、收起/展开组件、备份导入导出沿用。
+打包版数据保存在 ~/Library/Application Support/Qingchi，开发版继续使用项目 runtime-profile。
+旧版存档没有自动迁移。可从旧版设置导出 JSON，再在新版导入。导入会替换新版当前内容，先备份。
+本轮未实现桌面底层挂载、开机启动、原生系统通知、Intel 构建、签名公证或多屏/睡眠恢复。
+
+素材：app/assets/clear-pond-v2.png、leaf-occlusion.svg、Qingchi.icns；原始矢量图标 app/icon.svg。
+生成方式与提示词：evidence/visual-asset-provenance.json、evidence/asset-prompt.txt。
+源代码旧画面：transaction/visual-v1-baseline/app 与 desktop。
+回到旧画面（只针对你另外复制的项目目录）：
+sh transaction/ROLLBACK.sh --visual-root /绝对路径/项目副本
+还原原始 MIT 鱼池引擎（不是整个应用）：
+sh transaction/ROLLBACK.sh /绝对路径/pond副本.js
+
+验收：22 项核心单测；Mac 最终包 7 组原生检查；同输入 BASELINE/MODIFIED/ROLLBACK 与补丁复建。
+原生检查包括窗口隔离、手笺重载、动画推进、本地素材解码、点击隔离、暂停、专注/沉浸控件。
+上轮 21 项浏览器检查仅为历史证据，本轮以新的原生包检查为准。

@@ -1,0 +1,13 @@
+清池 · 蓬莱临水 0.6 — 已完成
+最新两条反馈：不露手只露竿；横向精准空格判定后连按/长按拉鱼；真实观赏鱼；缓流水纹、游鱼尾迹/吃食涟漪；修左下荷叶穿模与微动光影。
+对象仍为 /Users/mac/Documents/Codex/learn/qingchi-desktop-20261106。
+交付：打开蓬莱临水0.6.command；releases/蓬莱临水-0.6.0-mac-arm64.app；releases/Qingchi-0.6.0-mac-arm64.zip。已打开用户新版并复制有效v5存档，v5原文件哈希未变。
+功能：14秒横向判定，最多3次试按；命中后连按/长按收线，松开不丢进度、不张力断线；竿头和鱼/浮漂向岸移动，进度/距离反馈。六种真实观赏鱼及独立模型/卡图：金鱼、孔雀鱼、霓虹灯鱼、斑马鱼、暹罗斗鱼、神仙鱼，含学名；旧12项不删，共18项。
+清池：阻尼波纹叠加、方向尾迹、投食/吃食水纹、背景折射、动态焦散明暗及叶影。原1536x1024背景字节不变；原小荷叶椭圆遮罩偏位，换为原图坐标轮廓+cover变换，在Canvas内遮挡并拒绝叶面投饵。游鱼有缓慢避让。
+代码：app/life-core.js fishingSession/fishingStep/ornamental/waters；app/penglai/src/fishing-world.js setReel/visibleHandMeshes；app/vendor/pond.js Ripple/emitWave/surfaceAt/LEAF_POLYGONS/leafAt/occludeLeaves；app/water-surface.js；app/environment.js light/render。
+证据：evidence/v6/final-native（10组，原生键鼠长按/连按各钓一尾、入池、图鉴18图、窄屏）；final-reopen（2组，2次钓获/1尾入池）；water-packaged（吃食和尾迹计数、光影变化、实际WebGL像素随时间变化）；63单元测试通过。另有旧版/新版/回滚同输入。
+同输入：长按7秒 BASELINE=failed/拉得太紧，MODIFIED=caught/100%，ROLLBACK恢复failed。叶面点击投饵增量1→0→1；叶面鱼像素alpha255→0→255；动态光影false→true→false。原引擎组件/水面点击计数仍为1/2→0/1→1/2。
+回滚：沿用transaction/roles.json四角色；VERIFICATION.txt.feedback_v6；FEEDBACK_SUPPLEMENT.patch完整二进制补丁。ROLLBACK.sh --feedback-root只允许有.qingchi-rollback-copy标记的独立副本；从v5-feedback-baseline.tar.gz恢复。94个旧文件哈希匹配，补丁重新应用与当前运行源码全匹配。回滚检查副本现已重新应用为v6，不要将其当作旧基线。
+错误保留：unit.stdout（第一批卡图未生成和旧规则字节相等断言失效，单独npm退出码未捕获）；native-1/failure.json（载入遮罩拦截点击，验收等到可点）；native-2/failure.json（长图鉴关闭钮滚走，产品改为内部卡片滚动后最终通过）。
+限制：轻量视觉波纹/折射而非完整流体仿真；真实鱼种但模型、尺寸、钓点和混养是游戏简化；无真实饲养或当地野外分布保证。Mac arm64已验，无公证/Intel/Windows0.6/多屏休眠Spaces完整验收。自动测试不证明好玩。
+下一步：等待用户试用反馈，不自动增加模块。

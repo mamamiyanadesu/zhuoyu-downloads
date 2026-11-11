@@ -1,0 +1,1 @@
+const cp=require('node:child_process'),path=require('node:path');for(const name of ['clear6-probe.cjs','original8-fish-probe.cjs']){const q=cp.spawnSync(process.execPath,[path.join(__dirname,name),process.argv[2]],{encoding:'utf8'});process.stdout.write(q.stdout);process.stderr.write(q.stderr);if(q.status!==0)process.exit(q.status||1)}

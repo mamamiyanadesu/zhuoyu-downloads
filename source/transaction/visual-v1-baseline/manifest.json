@@ -1,0 +1,15 @@
+{
+  "DIFF.patch": "fa60891b823be3bab967cfc6b67a3d37f03d66529c2ecfe8c9053d2a3f030c44",
+  "VERIFICATION.txt": "a7e95cc1d2c15a4f3cdf3faa9336c06b87df2595d1b01dd90da7501f609ecb17",
+  "ROLLBACK.sh": "eecec36c69276cee01f6e980a970350065a9764a3e405fe21a737450b1bf07c7",
+  "app/index.html": "836c211aeaf15218064280c68fbf19f4ef1f5b5b359e79b1812463cd5bd50861",
+  "app/core.js": "7c74e881f451f33ab0e3bb730ca4cbd3b8dfbd8fc183f733cd869e3e2cde62cc",
+  "app/icon.svg": "3d9308bc82adecc7efbcab0afb074765c1c3c3b4f41b7ba66ca7c4315fc63d29",
+  "app/style.css": "f07ed4f77829e3d9bee6ad8ca514d29241cad9e0d7b27419dea430ed429057f1",
+  "app/app.js": "790b44319d2bd10902a36c730cac443e2d9992b5a7dbe3f97af1b95bcbb90f0b",
+  "app/vendor/pond.js": "d95875a159b075390200d7a8330bd6660692706445735f99c296ea681a2d201e",
+  "app/vendor/LICENSE-koi.txt": "925e46045d334fa9f933bc725ec7912a9e26ea3b0e0e38ae002475a9c2b3d6c4",
+  "app/vendor/pond.original.js": "62571acded09327c27215518a5fe5accc683faee448485362354c2fc966dd2e7",
+  "desktop/preload.cjs": "d4118c497bd6a0819ab98a53c91b19240fc82368933a177bc3a71ba70b4f3dc3",
+  "desktop/main.cjs": "42469e02ce44e09b2897b599d08ead69cbbe69f11c55172f064a839d461896ad"
+}
